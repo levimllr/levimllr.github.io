@@ -59,8 +59,13 @@ h1,
 h2,
 h3 {
     font-weight: 700;
-    text-transform: uppercase;
+    text-transform: none;
     /* color: #fff; */
+    
+}
+
+h4, h4 {
+    text-transform: none;
 }
 
 h1 {
@@ -292,6 +297,58 @@ nav {
     border-bottom: 2px solid #3498db;
 }
 
+/* Sticky navigation */
+.sticky-black {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: none;
+    background-color: rgba(0, 0, 0, 0.95);   
+    box-shadow: 0 2px 2px #efefef;
+    /* Layer stacking! */
+    z-index: 9999;
+    color: #fff;
+}
+
+.sticky-white {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: none;
+    background-color: rgba(255, 255, 255, 0.95);   
+    box-shadow: 0 2px 2px #efefef;
+    /* Layer stacking! */
+    z-index: 9999;
+    color: #444;
+}
+
+.sticky-black .logo,
+.sticky-white .logo {
+    margin: 18px;
+}
+
+.sticky-black .main-nav,
+.sticky-white .main-nav { 
+    margin-top: 18px; 
+}
+
+.sticky-black .main-nav li a:link,
+.sticky-white .main-nav li a:link,
+.sticky-black .main-nav li a:visited,
+.sticky-white .main-nav li a:visited {
+    padding: 8px 0;
+}
+
+.sticky-white .main-nav li a:link,
+.sticky-white .main-nav li a:visited {
+    color: #444;
+}
+
+/* .sticky .logo { display: none; }
+.sticky .logo-black { display: block; } */
+
 /* ----------------------------------------------- */
 /* -------------------SLIDES---------------------- */
 /* ----------------------------------------------- */
@@ -469,7 +526,6 @@ nav {
 .project-feature h4 {
     text-align: left;
     padding-left: 10px;
-    text-decoration: underline;
 }
 
 .project-feature ul {
@@ -602,7 +658,6 @@ nav {
     text-align: left;
     padding-top: 10px;
     padding-left: 10px;
-    text-decoration: underline;
 }
 
 .section-other ul {
@@ -639,7 +694,6 @@ nav {
 .project-feature h4 {
     text-align: left;
     padding-left: 10px;
-    text-decoration: underline;
 }
 
 .project-feature ul {
@@ -691,3 +745,110 @@ nav {
 /* ----------------------------------------------- */
 /* --------------------FOOTER--------------------- */
 /* ----------------------------------------------- */
+
+footer {
+    background-color: #000;
+    color: #fff;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ion-icon {
+    padding: 5px 2px;
+
+    /* secret alignment tricks */
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+
+footer a:link,
+footer a:visited {
+    color: #2980b9;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: none;
+}
+
+footer li a:hover {
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: none
+}
+
+footer a:hover,
+footer a:active {
+    color: #fff;
+    border-bottom: 1px solid transparent;
+}
+
+.contact-links {
+    white-space: nowrap;
+}
+
+.contact-links p {
+    display: inline;
+}
+
+.contact-links ion-icon {
+    font-size: 125%;
+}
+
+.social-links ion-icon {
+    font-size: 200%;
+    padding-left: 30px;
+    padding-top: 6px;
+}
+
+.footer-nav {
+    text-align: right;
+}
+
+.footer-nav:hover{
+    color: #fff;
+}
+
+.footer-nav li a:hover {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer-nav ion-icon {
+    font-size: 550%;
+    margin-top: -20px;
+}
+
+/* .footer-nav ion-icon:hover {
+    color: #fff;
+} */
+
+.footer-nav h1 {
+    font-size: 280%;
+    display: inline;
+    vertical-align: -10%;
+}
+
+.copyright {
+    margin: 6%;
+}
+
+.copyright p {
+    text-align: center;
+}
+
+.linkedin,
+.github {
+    transition: color 0.2s;
+}
+
+.linkedin:hover {
+    color: #0077B5;
+}
+
+.github:hover {
+    color: #fff;
+}
