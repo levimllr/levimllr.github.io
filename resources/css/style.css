@@ -438,6 +438,16 @@ nav {
     color: #333;
 }
 
+.section-project-ph {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/pihabitsleds.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/pihabitsleds.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    color: #fff;
+}
+
 .project-feature-header {
     margin-top: 15vh;
     margin-left: 50px;
