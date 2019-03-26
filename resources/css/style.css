@@ -401,6 +401,11 @@ nav {
 /* -------------------PROJECTS-------------------- */
 /* ----------------------------------------------- */
 
+.section-main {
+    background-color: #eee;
+    color: #333;
+}
+
 .box img {
     width: 100%;
     height: auto;
@@ -573,3 +578,116 @@ nav {
       width: 100%;
     }
   }
+
+/* ----------------------------------------------- */
+/* ----------------OTHER PROJECTS----------------- */
+/* ----------------------------------------------- */
+
+.section-other {
+    background-color: #eee;
+    height: 100vh;
+    color: #333;
+}
+
+.section-other .project-box {
+    text-align: left;
+    height: 100%;
+}
+
+.section-other h3, h5 {
+    text-align: center;
+}
+
+.section-other h4 {
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    text-decoration: underline;
+}
+
+.section-other ul {
+    list-style: none;
+    padding: 2px;
+}
+
+.section-other ul li {
+    padding: 5px 0;
+}
+
+.section-other ion-icon {
+    display: inline-block;
+    width: 30px;
+    /* text-align: center; */
+    color: #2980b9;
+    font-size: 120%;
+
+    /* secret alignment tricks! */
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+
+.project-feature {
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.project-feature h4 {
+    text-align: left;
+    padding-left: 10px;
+    text-decoration: underline;
+}
+
+.project-feature ul {
+    list-style: none;
+    padding: 2px;
+}
+
+.project-feature ul li {
+    padding: 5px 0;
+}
+
+.project-feature ion-icon {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #2980b9;
+    font-size: 120%;
+
+    /* secret alignment tricks! */
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+
+/* ----------------------------------------------- */
+/* --------------------CONTACT-------------------- */
+/* ----------------------------------------------- */
+
+.section-contact {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/pihabitsleds.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/pihabitsleds.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.section-contact img {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: auto;
+    margin: auto auto;
+
+}
+
+/* ----------------------------------------------- */
+/* --------------------FOOTER--------------------- */
+/* ----------------------------------------------- */
