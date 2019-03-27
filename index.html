@@ -43,19 +43,19 @@
                         <div class="mySlides fade">
                             <div class="numbertext">1 / 3</div>
                             <img src="resources/img/gifferrebornexercise.png" style="width:100%">
-                            <div class="text">Arduino Visualizer: A virtual Arduino hardware coding platform.</div>
+                            <div class="text">Arduino Visualizer: A virtual Arduino hardware coding platform. "Generate Exercise" is a feature that allows the instructor to make an exercise in one click given three source files.</div>
                         </div>
                         
                         <div class="mySlides fade">
                             <div class="numbertext">2 / 3</div>
                             <img src="resources/img/dmbproto.png" style="width:100%">
-                            <div class="text">Digital Music Box: A mechatronic song composer.</div>
+                            <div class="text">Digital Music Box: A mechatronic song composer. The prototype has 3 tracks available for composition on the drum with metal pegs, which trigger sounds from the MIDI module.</div>
                         </div>
                         
                         <div class="mySlides fade">
                             <div class="numbertext">3 / 3</div>
-                            <img src="resources/img/pihabitstracker.png" style="width:100%">
-                            <div class="text">Pi Habits: An IoT habit tracker.</div>
+                            <img src="resources/img/phboth.jpg" style="width:100%">
+                            <div class="text">Pi Habits: An IoT habit tracker. The landing page shows a habit heatmap (ala GitHub) which is synced with a grid of LEDs to give a stimulating log of activity.</div>
                         </div>
                         
                         <!-- Next and previous buttons 
@@ -84,31 +84,31 @@
             <div class="row">
                 <div class="col span-1-of-3 box">
                     <div class="project-box">
-                        <img src="resources/img/gifferreborngif.png" alt="Arduino Visualizer">
+                        <img src="resources/img/gifferrebornconfig.png" alt="Arduino Visualizer">
                         <h4>Arduino Visualizer</h4>
-                        <h5>A virtual Arduino hardware coding platform.</h5>
+                        <h5>A virtual Arduino coding platform.</h5>
                         <div>
-                            <a class="btn-small btn-full js--scroll-to-gr" href="#">Details</a>
+                            <a class="btn btn-full js--scroll-to-gr" href="#">Details</a>
                         </div>
                     </div>
                 </div>
                 <div class="col span-1-of-3 box">
                         <div class="project-box">
-                            <img src="resources/img/dmbproto.png" alt="Digital Music Box">
+                            <img src="resources/img/dmbprotoangle.jpg" alt="Digital Music Box">
                             <h4>Digital Music Box</h4>
                             <h5>A mechatronic song composer.</h5>
                             <div>
-                                <a class="btn-small btn-full js--scroll-to-dmb" href="#">Details</a>
+                                <a class="btn btn-full js--scroll-to-dmb" href="#">Details</a>
                             </div>
                         </div>
                 </div>
                 <div class="col span-1-of-3 box">
                     <div class="project-box">
-                        <img src="resources/img/pihabitsleds.png" alt="Arduino Visualizer">
+                        <img src="resources/img/phboth.jpg" alt="Arduino Visualizer">
                         <h4>Pi Habits</h4>
                         <h5>An IoT habit tracker.</h5>
                         <div>
-                            <a class="btn-small btn-full js--scroll-to-ph" href="#">Details</a>
+                            <a class="btn btn-full js--scroll-to-ph" href="#">Details</a>
                         </div>
                     </div>
                 </div>
@@ -119,8 +119,8 @@
             <div class="row black-and-white">
                 <div class="col span-1-of-2 box">
                     <!-- Trigger the Modal -->
-                    <img id="grConfigImg" src="resources/img/gifferrebornconfig.png" alt="Arduino Visualizer Board Configuration" onClick="triggerModal(this.id)">
-
+                    <img id="grConfigImg" src="resources/img/gifferreborngif.png" alt="Arduino Visualizer output. The site takes C++ code input into the Ace Editor, interprets it into JavaScript, and creates a .gif simulating hardware interfaced with an Arduino.">
+                    <p>Arduino Visualizer output. The site takes C++ code input into the Ace Editor, interprets it into JavaScript, and creates a .gif simulating hardware interfaced with an Arduino.</p>
                     <!-- The Modal -->
                     <div id="grConfigImg-modal" class="modal">
 
@@ -134,7 +134,8 @@
                         <div id="grConfigImg-caption"></div>
                     </div>
 
-                    <img id="grExerciseImg" src="resources/img/gifferrebornexercise.png" alt="Arduino Visualizer Exercise Generator" onClick="triggerModal(this.id)">
+                    <img id="grExerciseImg" src="resources/img/gifferrebornexercise.png" alt="Arduino Visualizer Exercise Generator. This feature allows the instructor to make an exercise in one click given three source files." onClick="triggerModal(this.id)">
+                    <p>Arduino Visualizer Exercise Generator. This feature allows the instructor to make an exercise in one click given three source files.</p>
                     <div id="grExerciseImg-modal" class="modal">
                         <span class="close">&times;</span>
                         <img class="modal-content" id="grExerciseImg-modalImg">
@@ -143,13 +144,13 @@
                 </div>
                 <div class="col span-1-of-2 box">
                     <div class="project-feature-header">
-                        <h1>Arduino Visualizer</h1>
+                        <a href="https://dpengineering.github.io/giffer-reborn/index.html" target="_blank"><h1>Arduino Visualizer</h1></a>
                         <h3>A virtual Arduino coding platform. </h3>
                     </div>
                     <div class="project-feature">
                         <h4>Software:</h4>
                         <ul>
-                            <li><ion-icon name="logo-javascript"></ion-icon></ion-icon>JS + Ace, JSCPP</li>
+                            <li><ion-icon name="logo-javascript"></ion-icon></ion-icon>JS + Ace Editor, JSCPP</li>
                             <li><ion-icon name="logo-css3"></ion-icon></ion-icon>CSS3 + Bootstrap</li>
                             <li><ion-icon name="outlet"></ion-icon>Arduino Uno, Mega</li>
                             <li><ion-icon name="logo-octocat"></ion-icon></ion-icon>GitHub Pages</li>
@@ -189,27 +190,29 @@
                     <div class="project-feature">
                         <h4>Features:</h4>
                         <ul>
-                            <li><ion-icon name="hammer"></ion-icon></ion-icon>Allows for different notes, instruments, tempos.</li>
-                            <li><ion-icon name="hammer"></ion-icon></ion-icon>Capacitavely senses movable metal pins.</li>
-                            <li><ion-icon name="hammer"></ion-icon></ion-icon>Mixes tracks with a MIDI sound module.</li>
-                            <li><ion-icon name="hammer"></ion-icon>Manages data with Arduino + Raspberry Pi.</li>
-                            <li><ion-icon name="hammer"></ion-icon></ion-icon>WIP: Touch-screen interface.</li>
+                            <li><ion-icon name="hammer"></ion-icon></ion-icon>Allows for different notes, instruments, tempos</li>
+                            <li><ion-icon name="hammer"></ion-icon></ion-icon>Capacitavely senses movable metal pins</li>
+                            <li><ion-icon name="hammer"></ion-icon></ion-icon>Mixes tracks with a MIDI sound module</li>
+                            <li><ion-icon name="hammer"></ion-icon>Manages data with Arduino + Raspberry Pi</li>
+                            <li><ion-icon name="hammer"></ion-icon></ion-icon>WIP: Touch-screen interface</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col span-1-of-2 box">
-                    <img id="dmbProtoImg" src="resources/img/dmbproto.png" alt="Digital Music Box Prototype" onClick="triggerModal(this.id)">
+                    <img id="dmbProtoImg" src="resources/img/dmbproto.png" alt="Digital Music Box prototype. The prototype has 3 tracks available for composition on the drum with metal pegs, which trigger sounds from the MIDI module.">
+                    <p>Digital Music Box prototype. The prototype has 3 tracks available for composition on the drum with metal pegs, which trigger sounds from the MIDI module.</p>
                     <div id="dmbProtoImg-modal" class="modal">
                         <span class="close">&times;</span>
                         <img class="modal-content" id="dmbProtoImg-modalImg">
                         <div id="dmbProtoImg-caption"></div>
                     </div>
 
-                    <img id="dmbProtoImg" src="resources/img/dmbproto.png" alt="Digital Music Box Prototype" onClick="triggerModal(this.id)">
-                    <div id="dmbProtoImg-modal" class="modal">
+                    <img id="dmbModelImg" src="resources/img/dmbmodel.png" alt="Digital Music Box full model. The final product will have a removable drum with 12 programmable tracks and a touch-screen GUI.">
+                    <p>Digital Music Box full model. The final product will have a removable drum with 12 programmable tracks and a touch-screen GUI.</p>
+                    <div id="dmbModelImg-modal" class="modal">
                         <span class="close">&times;</span>
-                        <img class="modal-content" id="dmbProtoImg-modalImg">
-                        <div id="dmbProtoImg-caption"></div>
+                        <img class="modal-content" id="dmbModelImg-modalImg">
+                        <div id="dmbModelImg-caption"></div>
                     </div>
                 </div>
             </div>
@@ -218,23 +221,25 @@
         <section class="section-project-ph js--section-project-ph">
             <div class="row black-and-white">
                 <div class="col span-1-of-2 box">
-                    <img id="pihabitstrackerImg" src="resources/img/pihabitstracker.png" alt="PiHabits online habit tracker" onClick="triggerModal(this.id)">
-                    <div id="pihabitstrackerImg-modal" class="modal">
+                    <img id="phupdateImg" src="resources/img/phupdate.png" alt="The PiHabits IoT habit tracker is fully responsive and gives users a platform to log their habit activity from any device.">
+                    <p>The PiHabits IoT habit tracker is fully responsive and gives users a platform to log their habit activity from any device.</p>
+                    <div id="phupdateImg-modal" class="modal">
                         <span class="close">&times;</span>
-                        <img class="modal-content" id="pihabitstrackerImg-modalImg">
-                        <div id="pihabitstrackerImg-caption"></div>
+                        <img class="modal-content" id="phupdateImg-modalImg">
+                        <div id="phupdateImg-caption"></div>
                     </div>
 
-                    <img id="pihabitsledsImg" src="resources/img/pihabitsleds.png" alt="Raspberry Pi + Unicorn HAT indicator" onClick="triggerModal(this.id)">
-                    <div id="pihabitsledsImg-modal" class="modal">
+                    <img id="phbothImg" src="resources/img/phboth.jpg" alt="PiHabits displays a unique activity heatmap for each user on its site and on an LED grid. The intensity and color of the LEDs indicates activity frequency and streaks. ">
+                    <p>PiHabits displays a unique activity heatmap for each user on its site and on an LED grid. The intensity and color of the LEDs indicates activity frequency and streaks.</p>
+                    <div id="phbothImg-modal" class="modal">
                         <span class="close">&times;</span>
-                        <img class="modal-content" id="pihabitsledsImg-modalImg">
-                        <div id="pihabitsledsImg-caption"></div>
+                        <img class="modal-content" id="phbothImg-modalImg">
+                        <div id="phbothImg-caption"></div>
                     </div>
                 </div>
                 <div class="col span-1-of-2 box">
                     <div class="project-feature-header">
-                        <h1>Pi Habits</h1>
+                        <a href="https://www.youtube.com/watch?v=RwNhhZVvWiA" target="_blank"><h1>Pi Habits</h1></a>
                         <h3>An IoT habit tracker.</h3>
                     </div>
                     <div class="project-feature">
@@ -250,11 +255,11 @@
                     <div class="project-feature">
                         <h4>Features:</h4>
                         <ul>
-                            <li><ion-icon name="hammer"></ion-icon></ion-icon>Online heatmap syncs with LED grid.</li>
-                            <li><ion-icon name="hammer"></ion-icon></ion-icon>SQL database tracks users, habits, history.</li>
-                            <li><ion-icon name="hammer"></ion-icon></ion-icon>Activity frequency reflects in color, brightness.</li>
-                            <li><ion-icon name="hammer"></ion-icon>Raspberry Pi hosts site server.</li>
-                            <li><ion-icon name="hammer"></ion-icon></ion-icon>Tracks and indicates streaks.</li>
+                            <li><ion-icon name="hammer"></ion-icon></ion-icon>Online heatmap syncs with LED grid</li>
+                            <li><ion-icon name="hammer"></ion-icon></ion-icon>SQL database tracks users, habits, history</li>
+                            <li><ion-icon name="hammer"></ion-icon></ion-icon>Activity frequency reflects in color, brightness</li>
+                            <li><ion-icon name="hammer"></ion-icon>Raspberry Pi hosts site server</li>
+                            <li><ion-icon name="hammer"></ion-icon></ion-icon>Tracks and indicates streaks</li>
                         </ul>
                     </div>
                 </div>
@@ -270,21 +275,21 @@
                     <div class="project-box">
                         <img src="resources/img/osksnap.png" alt="Organic Soup Kitchen Screenshot">
                         <h3>Organic Soup Kitchen Site</h3>
-                        <h5>A virtual Arduino hardware coding platform.</h5>
+                        <h5>A non-profit organization hub.</h5>
                         <div class="other-project-list">
                             <h4>Software:</h4>
                             <ul>
                                 <li><ion-icon name="leaf"></ion-icon></ion-icon>Wix</li>
                                 <li><ion-icon name="filing"></ion-icon>MailChimp, DonorBox, Stripe</li>
                                 <li><ion-icon name="cloud"></ion-icon></ion-icon>Salesforce</li>
-                                <li><ion-icon name="albums"></ion-icon>tableau, Zapier</li>
+                                <li><ion-icon name="albums"></ion-icon>Tableau, Zapier</li>
                                 <li></li>
                                 <br>
                             </ul>
                             <h4>Features:</h4>
                             <ul>
-                                <li><ion-icon name="hammer"></ion-icon></ion-icon>Integrates MailChimp,  DonorBox.</li>
-                                <li><ion-icon name="hammer"></ion-icon></ion-icon>Syncs with Salesforce.</li>
+                                <li><ion-icon name="hammer"></ion-icon></ion-icon>Integrates MailChimp,  DonorBox</li>
+                                <li><ion-icon name="hammer"></ion-icon></ion-icon>Syncs with Salesforce</li>
                                 <li><ion-icon name="hammer"></ion-icon>Easy to maintain and use.</ion-icon></li>
                             </ul>
                         </div>
@@ -307,9 +312,9 @@
                             </ul>
                             <h4>Features:</h4>
                             <ul>
-                                <li><ion-icon name="hammer"></ion-icon></ion-icon>Blower controlled by joystick.</li>
-                                <li><ion-icon name="hammer"></ion-icon>Modular obstacle course.</li>
-                                <li><ion-icon name="hammer"></ion-icon></ion-icon>Astroturf + border control ball.</li>
+                                <li><ion-icon name="hammer"></ion-icon></ion-icon>Blower controlled by joystick</li>
+                                <li><ion-icon name="hammer"></ion-icon>Modular obstacle course</li>
+                                <li><ion-icon name="hammer"></ion-icon></ion-icon>Astroturf + border control ball</li>
                             </ul>
                         </div>
                     </div>
@@ -332,9 +337,9 @@
                             </ul>
                             <h4>Features:</h4>
                             <ul>
-                                <li><ion-icon name="hammer"></ion-icon></ion-icon>Infinitely replayable.</li>
-                                <li><ion-icon name="hammer"></ion-icon>Multiplayer.</li>
-                                <li><ion-icon name="hammer"></ion-icon></ion-icon>Modern, responsive design.</li>
+                                <li><ion-icon name="hammer"></ion-icon></ion-icon>Infinitely replayable</li>
+                                <li><ion-icon name="hammer"></ion-icon>Multiplayer</li>
+                                <li><ion-icon name="hammer"></ion-icon></ion-icon>Modern, responsive design</li>
 
                             </ul>
                         </div>
@@ -354,7 +359,7 @@
                 <div class="col span-1-of-3 box">
                     <ul class="contact-links">
                         <li><a href="https://en.wikipedia.org/wiki/San_Francisco_Bay_Area" target="_blank"><ion-icon name="pin"></ion-icon><h3>SF Bay Area</h3></a></li>
-                        <li><a href="tel:+1-123-456-7890" target="_blank"><ion-icon name="call"></ion-icon><h3>123.456.7890</h3></a></li>
+                        <li><a href="tel:+1-415-322-8028" target="_blank"><ion-icon name="call"></ion-icon><h3>415.322.8028</h3></a></li>
                         <li><a href="mailto:hi@levimiller.me" target="_blank"><ion-icon name="mail"></ion-icon><h3>hi@levimiller.me</h3></a></li>
 
                     </ul>
@@ -396,7 +401,7 @@
                     </ul>
                 </div> -->
             </div>
-            <p>&copy; 2019 by Levi Miller. Made with <i class="icon ion-md-heart"></i> and JavaScript.</p>
+            <p>&copy; 2019 by Levi Miller. Handmade with <i class="icon ion-md-heart"></i> and JavaScript.</p>
         </footer>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

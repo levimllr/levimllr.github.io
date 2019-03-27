@@ -107,11 +107,12 @@ h2:after {
 h3 {
     font-size: 110%;
     margin-bottom: 15px;
+    line-height: 30px;
 }
 
 h4, h5 {
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
 }
 
 /* Line after h2? */
@@ -178,11 +179,16 @@ a:visited {
 
 a:hover,
 a:active {
-    color: #555;
+    color: #fff;
     border-bottom: 1px solid transparent;
 }
 
 /* ----- BUTTONS ----- */
+
+.btn {
+    margin-top: 10px;
+}
+
 .btn:link,
 .btn:visited,
 input[type=submit] {
@@ -279,6 +285,13 @@ nav {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0));
 }
 
+nav li {
+    letter-spacing: 2px;
+    padding-top: 4px;
+    padding-right: 28px;
+    font-weight: 700;
+}
+
 .logo {
     height: auto;
     width: auto;
@@ -287,6 +300,11 @@ nav {
     margin-bottom: 50px;
     margin-left: 32px;
     cursor: pointer; 
+    transition: color 0.3s ease;
+}
+
+.logo:hover {
+    color: var(--peter-river-blue)
 }
 
 /* Main navigation */
@@ -322,8 +340,8 @@ nav {
 /* Mobile navi */
 .mobile-nav-icon {
     float: right;
-    margin-top: 24px;
-    margin-right: 38px;
+    margin-top: 16px;
+    margin-right: 22px;
     cursor: pointer;
     display: none;
 }
@@ -331,6 +349,8 @@ nav {
 .ion-md-menu {
     font-size: 200%;
     color: #fff;
+    padding-top: 13px;
+    padding-right: 4px;
 }
 
 .ion-md-close {
@@ -346,7 +366,7 @@ nav {
     width: 100%;
     background-image: none;
     background-color: rgba(0, 0, 0, 0.95);   
-    box-shadow: 0 2px 2px #efefef;
+    box-shadow: 0 2px 2px #222;
     /* Layer stacking! */
     z-index: 9999;
     color: #fff;
@@ -365,6 +385,16 @@ nav {
     z-index: 9999;
     color: #444;
     transition: background-color 0.3s ease;
+}
+
+.sticky-black .ion-md-menu,
+.sticky-white .ion-md-menu {
+    padding-top: 0px;
+    padding-right: 0px;
+}
+
+.sticky-white .ion-md-menu {
+    color: #333;
 }
 
 .sticky-black .logo,
@@ -531,6 +561,10 @@ section {
     height: 100vh;
 }
 
+section p {
+    text-align: center;
+    padding-bottom: 20px;
+}
 .section-main {
     background-color: #eee;
     color: #333;
@@ -551,7 +585,7 @@ section {
 
 .white-and-black {
     color: #333;
-    text-align: right;
+    text-align: left;
 }
 
 .section-project-gr {
@@ -893,12 +927,13 @@ section {
 /* ----------------------------------------------- */
 
 footer {
-    background-color: #000;
-    color: #fff;
+    background-color: #eee;
+    color: #333;
 }
 
 footer p {
     text-align: center;
+    padding-top: 20px;
     padding-bottom: 20px;
 }
 

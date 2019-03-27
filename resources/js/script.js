@@ -147,7 +147,6 @@ $(document).ready(function() {
     currentSlide(3)
   });
 
-  
   /* Scroll on buttons */
   $('.js--scroll-to-main').click(function () {
       $('html, body').animate({scrollTop: $('.js--section-main').offset().top}, 1000);
@@ -168,6 +167,67 @@ $(document).ready(function() {
     $('html, body').animate({scrollTop: $('#header').offset().top}, 1000);
   });
   
+  // Modals
+  var modal;
+  var img;
+  var modalImg;
+  var captionText;
+
+  function triggerModal(clicked_id) {
+    var id = clicked_id;
+    console.log(id);
+    // Get the modal
+    modal = document.getElementById(id + '-modal');
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+
+    img = document.getElementById(id);
+    modalImg = document.getElementById(id + "-modalImg");
+    captionText = document.getElementById(id + "-caption");
+
+    modal.style.display = "block";
+    modalImg.src = img.src;
+    captionText.innerHTML = "<p style='text-align: center; color: #fff'>" + img.alt + "</p>";
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+      }
+
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+  } 
+
+  $('#grConfigImg').click(function () {
+    triggerModal('grConfigImg')
+  });
+
+  $('#grExerciseImg').click(function () {
+    triggerModal('grExerciseImg')
+  });
+
+  $('#dmbProtoImg').click(function () {
+    triggerModal('dmbProtoImg')
+  });
+
+  $('#dmbModelImg').click(function () {
+    triggerModal('dmbModelImg')
+  });
+
+  $('#phupdateImg').click(function () {
+    triggerModal('phupdateImg')
+  });
+
+  $('#phbothImg').click(function () {
+    triggerModal('phbothImg')
+  });
+
   // Select all links with hashes
   /* Navigation scroll */
   $(function() {
