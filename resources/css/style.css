@@ -134,7 +134,7 @@ h4, h5 {
 }
 
 .box p {
-    font-size: 90%;
+    /* font-size: 90%; */
     line-height: 145%;
 }
 
@@ -181,6 +181,13 @@ a:hover,
 a:active {
     color: #fff;
     border-bottom: 1px solid transparent;
+}
+
+.white-and-black a:hover,
+a:active {
+    color: #333;
+    border-bottom: 1px solid transparent;
+}
 }
 
 /* ----- BUTTONS ----- */
@@ -563,8 +570,17 @@ section {
 
 section p {
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    font-size: 80%;
 }
+
+section img {
+    padding-top: 10px;
+    padding-bottom: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .section-main {
     background-color: #eee;
     color: #333;
@@ -574,7 +590,7 @@ section p {
 .box img {
     width: 100%;
     height: auto;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
 }
 
 .project-box {
@@ -758,8 +774,22 @@ section p {
     height: 100%;
 }
 
+.section-other a:link,
+.section-other a:visited {
+    border-bottom: none;
+}
+
+.section-other a:hover,
+.section-other a:active {
+    color: #333;
+}
+
 .section-other h3, h5 {
     text-align: center;
+}
+
+.other-project-list {
+    padding-top: 20px;
 }
 
 .section-other h4 {
@@ -836,7 +866,7 @@ section p {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/pihabitsleds.png);
     background-size: cover;
     background-position: center;
-    height: 55vh;
+    height: 100%;
     background-attachment: fixed;
     color: #fff;
     text-align: left;

@@ -100,6 +100,10 @@
     padding: 4px;
     font-size: 120%;
     }
+
+    section {
+        text-align: center;
+    }
 }
 
 
@@ -110,7 +114,12 @@
     }
     section { 
         padding: 25px 0; 
-        height: 100%;    
+        height: 100%;
     }
+
+    .section-contact{
+        height:100%;
+    }
+
     .contact-form {width: 100%; }
 }
