@@ -4,10 +4,11 @@
 
 /* Belize Hole Blue: #3498db */
 /* Peter River Blue: #2980b9 */
+/* Joust Blue: #54a0ff */
 
 :root {
     --belize-hole-blue: #3498db;
-    --peter-river-blue: #54a0ff;
+    --bleu-de-france: #2e86de;
   }
 
 
@@ -97,7 +98,7 @@ h2 {
 h2:after {
     display: block;
     height: 2px;
-    background-color: var(--peter-river-blue);
+    background-color: var(--bleu-de-france);
     content: " ";
     width: 100px;
     margin: 0 auto;
@@ -141,7 +142,6 @@ h4, h5 {
 /* ----- ICONS ----- */
 ion-icon {
     font-size: 64px;
-      color: var(--belize-hole-blue);
   }
   
   .icon-big {
@@ -171,23 +171,24 @@ a:link,
 a:visited {
     color: var(--belize-hole-blue);
     text-decoration: none;
-    /* padding-bottom: 1px; */
-    border-bottom: 1px solid var(--belize-hole-blue);
-    -webkit-transition: border-bottom 0.2s, color 0.2s;
-    transition: border-bottom 0.2s, color 0.2s;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
 }
 
 a:hover,
-a:active {
+a:active,
+a:focus {
     color: #fff;
-    border-bottom: 1px solid transparent;
+    border-bottom: 2px solid var(--belize-hole-blue);
 }
 
 .white-and-black a:hover,
-a:active {
+.white-and-black a:focus,
+.white-and-black a:active {
     color: #333;
-    border-bottom: 1px solid transparent;
-}
+/*    border-bottom: 1px solid transparent;*/
+    border-bottom: 1px solid var(--belize-hole-blue);
 }
 
 /* ----- BUTTONS ----- */
@@ -225,39 +226,24 @@ input[type=submit] {
 
 .btn:hover,
 .btn:active,
+.btn:focus,
 input[type=submit]:hover,
-input[type=submit]:active {
-    background-color: var(--peter-river-blue);
+input[type=submit]:active,
+input[type=submit]:focus {
+    background-color: var(--bleu-de-france);
 }
 
 .btn-full:hover,
-.btn-full:active {
-    border: 1px solid var(--peter-river-blue);
+.btn-full:active,
+.btn-full:focus {
+    border: 1px solid var(--bleu-de-france);
 }
 
 .btn-ghost:hover,
-.btn-ghost:active {
-    border: 1px solid var(--peter-river-blue);
+.btn-ghost:active,
+.btn-ghost:focus {
+    border: 1px solid var(--bleu-de-france);
     color: #fff;
-}
-
-.btn-small {
-    display: inline-block;
-    padding: 5px 15px;
-    margin-top: 5px;
-    font-size: 80%;
-    font-weight: 400;
-    text-decoration: none;
-    border-radius: 4px;
-    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
-    transition: background-color 0.2s, border 0.2s, color 0.2s;
-}
-
-.btn-small:hover,
-.btn-small:active,
-input[type=submit]:hover,
-input[type=submit]:active {
-    background-color: var(--peter-river-blue);    
 }
 
 /* ----------------------------------------------- */
@@ -310,8 +296,9 @@ nav li {
     transition: color 0.3s ease;
 }
 
-.logo:hover {
-    color: var(--peter-river-blue)
+.logo:hover,
+.logo:focus{
+    color: var(--bleu-de-france)
 }
 
 /* Main navigation */
@@ -340,7 +327,8 @@ nav li {
 }
 
 .main-nav li a:hover,
-.main-nav li a:active {
+.main-nav li a:active,
+.main-nav li a:focus {
     border-bottom: 2px solid var(--belize-hole-blue);
 }
 
@@ -424,11 +412,26 @@ nav li {
 .sticky-black .main-nav li a:visited,
 .sticky-white .main-nav li a:visited {
     padding: 8px 0;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
 }
 
 .sticky-white .main-nav li a:link,
 .sticky-white .main-nav li a:visited {
     color: #444;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.sticky-black .main-nav li a:hover,
+.sticky-white .main-nav li a:hover,
+.sticky-black .main-nav li a:focus,
+.sticky-white .main-nav li a:focus,
+.sticky-black .main-nav li a:active,
+.sticky-white .main-nav li a:active {
+    border-bottom: 2px solid var(--belize-hole-blue);
 }
 
 /* .sticky-white { 
@@ -501,7 +504,8 @@ nav li {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.prev:hover, .next:hover,
+.prev:focus, .next:focus {
   background-color: rgba(0,0,0,0.8);
 }
 
@@ -538,7 +542,7 @@ nav li {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active, .dot:hover, .dot:focus {
   background-color: #717171;
 }
 
@@ -579,6 +583,7 @@ section img {
     padding-bottom: 2px;
     padding-left: 20px;
     padding-right: 20px;
+    max-width: 500px;
 }
 
 .section-main {
@@ -665,7 +670,7 @@ section img {
     display: inline-block;
     width: 30px;
     text-align: center;
-    color: var(--peter-river-blue);
+    color: var(--bleu-de-france);
     font-size: 120%;
 
     /* secret alignment tricks! */
@@ -686,7 +691,7 @@ section img {
     transition: 0.3s;
   }
   
-  #myImg:hover {opacity: 0.7;}
+  #myImg:hover, #myImg:focus {opacity: 0.7;}
   
   /* The Modal (background) */
   .modal {
@@ -777,11 +782,16 @@ section img {
 .section-other a:link,
 .section-other a:visited {
     border-bottom: none;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
 }
 
 .section-other a:hover,
-.section-other a:active {
+.section-other a:active,
+.section-other a:focus {
     color: #333;
+    border-bottom: 1px solid var(--belize-hole-blue);
 }
 
 .section-other h3, h5 {
@@ -811,7 +821,7 @@ section img {
     display: inline-block;
     width: 30px;
     /* text-align: center; */
-    color: var(--peter-river-blue);
+    color: var(--bleu-de-france);
     font-size: 120%;
 
     /* secret alignment tricks! */
@@ -847,7 +857,7 @@ section img {
     display: inline-block;
     width: 30px;
     text-align: center;
-    color: var(--peter-river-blue);
+    color: var(--bleu-de-france);
     font-size: 120%;
 
     /* secret alignment tricks! */
@@ -892,7 +902,7 @@ section img {
 
 .contact-links {
     white-space: nowrap;
-    margin-top: 30px;
+    margin-top: 24px;
 }
 
 .contact-links p {
@@ -901,7 +911,7 @@ section img {
 }
 
 .contact-links ion-icon {
-    font-size: 200%;
+    font-size: 175%;
 }
 
 .section-contact img {
@@ -914,43 +924,40 @@ section img {
 
 .section-contact a:link,
 .section-contact a:visited {
-    color: var(--peter-river-blue);
+    color: var(--bleu-de-france);
     text-decoration: none;
-    padding-bottom: 1px;
-    border-bottom: none;
-}
-
-.section-contact li a:hover {
-    color: #fff;
-    text-decoration: none;
-    padding-bottom: 1px;
-    border-bottom: none
-}
-
-.section-contact a:hover,
-.section-contact a:active {
-    color: #fff;
-    border-bottom: 1px solid transparent;
-}
-
-.section-contact h3 {
-    display: inline;
-    font-size: 150%;
-}
-
-
-.linkedin:hover {
-    color: #0077B5;
-}
-
-.github:hover {
-    color: #fff;
-}
-
-.linkedin,
-.github {
+    padding-bottom: 7px;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    -webkit-transition: color 0.2s;
+    transition: border-bottom 0.2s;
     transition: color 0.2s;
 }
+
+.section-contact li a:hover,
+.section-contact li a:active,
+.section-contact li a:focus {
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 7px;
+    border-bottom: 2px solid var(--belize-hole-blue);
+
+}
+
+/*
+.section-contact a:hover,
+.section-contact a:active,
+.section-contact a:focus {
+    color: #fff;
+    border-bottom: 2px solid var(--belize-hole-blue);
+}
+*/
+
+.section-contact p {
+    display: inline;
+    font-size: 135%;
+}
+
 
 /* ----------------------------------------------- */
 /* --------------------FOOTER--------------------- */
@@ -965,6 +972,7 @@ footer p {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    font-size: 90%;
 }
 
 .copyright {

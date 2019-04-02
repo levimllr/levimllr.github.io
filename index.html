@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/resources/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="/resources/favicons/favicon.ico">
+        
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
@@ -14,11 +21,13 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
         <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
          
+        <title>Levi Miller</title>
+        
     </head>
 
     <body>
-        <header id="header">
-            <nav>
+        <header id="header" role="banner">
+            <nav role="navigation">
                 <div class="row">
                     <h3 class="logo js--scroll-to-top">Levi Miller</h3>
                     <ul class="main-nav js--main-nav">
@@ -77,7 +86,7 @@
             </div>
         </header>
 
-        <section class="section-main js--section-main" id="main">
+        <section class="section-main js--section-main" id="main" role="main">
             <div class="row">            
                 <h2>Recent Projects</h2>
             </div>
@@ -142,7 +151,7 @@
                         <div id="grExerciseImg-caption">Caption</div>
                     </div>
                 </div>
-                <div class="col span-1-of-2 box">
+                <article class="col span-1-of-2 box" role="article">
                     <div class="project-feature-header">
                         <a href="https://dpengineering.github.io/giffer-reborn/index.html" target="_blank"><h1>Arduino Visualizer</h1></a>
                         <h3>A virtual Arduino coding platform. </h3>
@@ -166,13 +175,13 @@
                             <li><ion-icon name="hammer"></ion-icon></ion-icon>Generates exercises in 1 click with source code</li>
                         </ul>
                     </div>
-                </div>
+                </article>
             </div>
         </section>
 
         <section class="section-project-dmb js--section-project-dmb">
             <div class="row white-and-black">
-                <div class="col span-1-of-2 box">
+                <article class="col span-1-of-2 box" role="article">
                     <div class="project-feature-header">
                         <a href="https://github.com/levimllr/DigitalMusicBox" target="_blank"><h1>Digital Music Box</h1></a>
                         <h3>A mechatronic song composer.</h3>
@@ -197,7 +206,7 @@
                             <li><ion-icon name="hammer"></ion-icon></ion-icon>WIP: Touch-screen interface</li>
                         </ul>
                     </div>
-                </div>
+                </article>
                 <div class="col span-1-of-2 box">
                     <img id="dmbProtoImg" src="resources/img/dmbproto.png" alt="Digital Music Box prototype. The prototype has 3 tracks available for composition on the drum with metal pegs, which trigger sounds from the MIDI module.">
                     <p>Digital Music Box prototype. The prototype has 3 tracks available for composition on the drum with metal pegs, which trigger sounds from the MIDI module.</p>
@@ -237,7 +246,7 @@
                         <div id="phbothImg-caption"></div>
                     </div>
                 </div>
-                <div class="col span-1-of-2 box">
+                <article class="col span-1-of-2 box" role="article">
                     <div class="project-feature-header">
                         <a href="https://www.youtube.com/watch?v=RwNhhZVvWiA" target="_blank"><h1>Pi Habits</h1></a>
                         <h3>An IoT habit tracker.</h3>
@@ -262,7 +271,7 @@
                             <li><ion-icon name="hammer"></ion-icon></ion-icon>Tracks and indicates streaks</li>
                         </ul>
                     </div>
-                </div>
+                </article>
             </div>
         </section>
 
@@ -270,7 +279,7 @@
             <div class="row">            
                 <h2>Past Projects</h2>
             </div>
-            <div class="row">
+            <article class="row" role="article">
                 <div class="col span-1-of-3 box">
                     <div class="project-box">
                         <a href="https://www.organicsoupkitchen.org/" target="_blank"><img src="resources/img/osksnap.png" alt="Organic Soup Kitchen Screenshot">
@@ -345,10 +354,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </article>
         </section>
 
-        <section class="section-contact js--section-contact" id="contact">
+        <section class="section-contact js--section-contact" id="contact" role="article">
             <div class="row">
                 <h2>Contact</h2>
             </div>
@@ -358,49 +367,24 @@
                 </div>
                 <div class="col span-1-of-3 box">
                     <ul class="contact-links">
-                        <li><a href="https://en.wikipedia.org/wiki/San_Francisco_Bay_Area" target="_blank"><ion-icon name="pin"></ion-icon><h3>SF Bay Area</h3></a></li>
-                        <li><a href="tel:+1-415-322-8028" target="_blank"><ion-icon name="call"></ion-icon><h3>415.322.8028</h3></a></li>
-                        <li><a href="mailto:hi@levimiller.me" target="_blank"><ion-icon name="mail"></ion-icon><h3>hi@levimiller.me</h3></a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/San_Francisco_Bay_Area" target="_blank"><ion-icon name="pin"></ion-icon><p>SF Bay Area</p></a></li>
+                        <li><a href="tel:+1-415-322-8028" target="_blank"><ion-icon name="call"></ion-icon><p>415.322.8028</p></a></li>
+                        <li><a href="mailto:hi@levimiller.me" target="_blank"><ion-icon name="mail"></ion-icon><p>hi@levimiller.me</p></a></li>
 
                     </ul>
                 </div>
                 <div class="col span-1-of-3 box">
                     <ul class="contact-links">
-                        <li><a href="https://github.com/levimllr" target="_blank"><ion-icon  class="github" name="logo-github"></ion-icon><h3>levimllr</h3></a></li>
-                        <li><a href="https://www.linkedin.com/in/levi" target="_blank"><ion-icon class="linkedin" name="logo-linkedin"></ion-icon><h3>Levi Miller</h3></a></li>
-                        <li><a href="./resources/img/Levi Miller Resume.pdf" target="_blank"><ion-icon name="document"></ion-icon><h3>Resume</h3></a></li>
+                        <li><a href="https://github.com/levimllr" target="_blank"><ion-icon  class="github" name="logo-github"></ion-icon><p>levimllr</p></a></li>
+                        <li><a href="https://www.linkedin.com/in/levi" target="_blank"><ion-icon class="linkedin" name="logo-linkedin"></ion-icon><p>Levi Miller</p></a></li>
+                        <li><a href="./resources/img/Levi Miller Resume.pdf" target="_blank"><ion-icon name="document"></ion-icon><p>Resume</p></a></li>
                     </ul>
                 </div>
             </div>
 
         </section>
         
-        <footer>
-            <div class="row">
-                <!-- <div class="col span-1-of-6">
-                    <ul class="contact-links">
-                        <li><a href="#"><ion-icon name="pin"></ion-icon><p>SF Bay Area</p></a></li>
-                        <li><a href="#"><ion-icon name="call"></ion-icon>123.456.7890</a></li>
-                        <li><a href="#"><ion-icon name="mail"></ion-icon><p>hi@levimiller.me</p></a></li>
-                    </ul>
-                </div>
-                <div class="col span-1-of-6">
-                    <ul class="social-links">
-                        <li><a href="https://github.com/levimllr"><ion-icon  class="github" name="logo-github"></ion-icon></a></li>
-                        <li><a href="https://www.linkedin.com/in/levi"><ion-icon class="linkedin" name="logo-linkedin"></ion-icon></a></li>
-                    </ul>
-                </div>
-                <div class="col span-2-of-6">
-                    <div class="row copyright">
-                        <p>&copy; 2019 by Levi Miller.</p> <p> Made with <i class="icon ion-md-heart"></i> and JavaScript.</p>
-                    </div> 
-                </div>
-                <div class="col span-2-of-6">
-                    <ul class="footer-nav">
-                        <li id="js--scroll-to-top"><a href="#header"><h1>Top</h1><ion-icon name="arrow-up"></ion-icon></a></li>
-                    </ul>
-                </div> -->
-            </div>
+        <footer role="contentinfo">
             <p>&copy; 2019 by Levi Miller. Handmade with <i class="icon ion-md-heart"></i> and JavaScript.</p>
         </footer>
 
