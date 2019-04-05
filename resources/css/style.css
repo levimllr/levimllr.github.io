@@ -464,18 +464,18 @@ nav li {
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
-  height: 60vh;
+  height: 600px;
   position: relative;
-  margin-top: 10vh;
+  margin-top: 115px;
   overflow: hidden;
 }
 
 /* Hide the images by default */
-.mySlides {
+.slides {
   display: none;
 }
 
-.mySlides > img {
+.slides > img {
     position: absolute;
     width: auto;
     object-fit: cover;
@@ -515,7 +515,7 @@ nav li {
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
-  top: 85%;
+  top: 550px;
   bottom: 8px;
   width: 100%;
   text-align: center;
@@ -569,7 +569,7 @@ nav li {
 /* ----------------------------------------------- */
 
 section {
-    height: 100vh;
+    height: 1000px;
 }
 
 section p {
@@ -592,11 +592,11 @@ section img {
     height: 100%;
 }
 
-.box img {
+/* .box img {
     width: 100%;
     height: auto;
-    /* margin-bottom: 15px; */
-}
+    /* margin-bottom: 15px;
+} */
 
 .project-box {
     text-align: center;
@@ -614,7 +614,6 @@ section img {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/gifferreborngif.png);
     background-size: cover;
     background-position: center;
-    /* height: 100vh; */
     background-attachment: fixed;
     color: #fff;
 }
@@ -624,7 +623,6 @@ section img {
     background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(./img/dmbproto.png);
     background-size: cover;
     background-position: center;
-    /* height: 100vh; */
     background-attachment: fixed;
     color: #333;
 }
@@ -634,13 +632,12 @@ section img {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/pihabitsleds.png);
     background-size: cover;
     background-position: center;
-    /* height: 100vh; */
     background-attachment: fixed;
     color: #fff;
 }
 
 .project-feature-header {
-    margin-top: 15vh;
+    margin-top: 100px;
     margin-left: 50px;
     margin-bottom: 50px;
 }
@@ -770,13 +767,18 @@ section img {
 
 .section-other {
     background-color: #eee;
-    /* height: 100vh; */
     color: #333;
 }
 
 .section-other .project-box {
     text-align: left;
     height: 100%;
+}
+
+.section-other img {
+    width: 100%;
+    height: auto;
+    /* margin-bottom: 15px; */
 }
 
 .section-other a:link,
