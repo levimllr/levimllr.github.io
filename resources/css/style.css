@@ -150,7 +150,7 @@ ion-icon {
   .icon-big {
       font-size: 350%;
       display: block;
-      color: var(--belize-hole-blue);
+      color: var(--bleu-de-france);
       margin-bottom: 10px;
   }
   
@@ -158,7 +158,7 @@ ion-icon {
       display: inline-block;
       width: 30px;
       text-align: center;
-      color: var(--belize-hole-blue);
+      color: var(--bleu-de-france);
       font-size: 120%;
       margin-right: 10px;
       
@@ -172,26 +172,33 @@ ion-icon {
 
 a:link,
 a:visited {
-    color: var(--belize-hole-blue);
+    color: var(--bleu-de-france);
     text-decoration: none;
-    border-bottom: 2px solid transparent;
-    -webkit-transition: border-bottom 0.2s;
-    transition: border-bottom 0.2s;
+    border-bottom: 3px solid transparent;
+    -webkit-transition: color 0.2s, border-bottom 0.2s;
+    transition: color 0.2s, border-bottom 0.2s;
 }
 
 a:hover,
 a:active,
 a:focus {
     color: #fff;
-    border-bottom: 2px solid var(--belize-hole-blue);
+    border-bottom: 3px solid var(--bleu-de-france);
 }
+
+/* .black-and-white a:hover,
+.black-and-white a:active,
+.black-and-white a:focus {
+    color: #fff;
+    border-bottom: 2px solid var(--belize-hole-blue);
+} */
 
 .white-and-black a:hover,
 .white-and-black a:focus,
 .white-and-black a:active {
     color: #333;
 /*    border-bottom: 1px solid transparent;*/
-    border-bottom: 1px solid var(--belize-hole-blue);
+    border-bottom: 3px solid var(--belize-hole-blue);
 }
 
 /* ----- BUTTONS ----- */
@@ -839,6 +846,7 @@ section img {
 
 .section-other a:link,
 .section-other a:visited {
+    padding-bottom: 38px;
     border-bottom: none;
     border-bottom: 2px solid transparent;
     -webkit-transition: border-bottom 0.2s;
@@ -848,12 +856,21 @@ section img {
 .section-other a:hover,
 .section-other a:active,
 .section-other a:focus {
+    padding-bottom: 38px;
     color: #333;
-    border-bottom: 1px solid var(--belize-hole-blue);
+    border-bottom: 2px solid var(--bleu-de-france);
 }
 
 .section-other h3, h5 {
     text-align: center;
+}
+
+.section-other h3 {
+    padding-top: 5px;
+    font-size: 120%;
+}
+.section-other h5 {
+    font-size: 90%;
 }
 
 .other-project-list {
