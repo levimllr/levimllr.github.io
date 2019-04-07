@@ -1,6 +1,11 @@
 $(document).ready(function() {
-    
+
+  /* ============================= */  
   /* For the sticky navigation bar */
+  /* =============================*/
+
+  /* When scrolling to the top of the page, remove animation
+  and style classes from the sticky header. */
   $(window).scroll(function() {
     var scrollTop = $(window).scrollTop();
     if (scrollTop < 249) {
@@ -10,6 +15,11 @@ $(document).ready(function() {
     }
   });
 
+  var stickyOffset = '66px;';
+
+  /* When scrolling down into the main section of the site,
+  fade in the sticky header. When scrolling up and out,
+  fade out the sticky header. */
   $('.js--section-main').waypoint(function(direction)  {
     if (direction == "down") {
         $('nav').removeClass('fadeOutUp');
@@ -22,9 +32,11 @@ $(document).ready(function() {
         $('nav').addClass('animated');
     } 
   }, {
-      offset: '60px;'
+      offset: stickyOffset
   });
 
+  /* When scrolling down or up into the subsequent sections of the site,
+  fade in the black-and-white or white-and-black sticky headers.*/
   $('.js--section-main').waypoint(function(direction) {
     if (direction == "down") {
         $('nav').removeClass('fadeOutUp');
@@ -37,7 +49,7 @@ $(document).ready(function() {
         $('nav').addClass('animated');
     } 
   }, {
-      offset: '60px;'
+      offset: stickyOffset
   });
 
   $('.js--section-project-gr').waypoint(function(direction) {
@@ -51,7 +63,7 @@ $(document).ready(function() {
         $('nav').addClass('sticky-black');
     }
   }, {
-      offset: '60px;'
+      offset: stickyOffset
   });
 
   $('.js--section-project-dmb').waypoint(function(direction) {
@@ -63,7 +75,7 @@ $(document).ready(function() {
       $('nav').addClass('sticky-white');
     }
   }, {
-      offset: '60px;'
+      offset: stickyOffset
   });
 
   $('.js--section-project-ph').waypoint(function(direction) {
@@ -75,7 +87,7 @@ $(document).ready(function() {
       $('nav').addClass('sticky-black');
     }
   }, {
-      offset: '60px;'
+      offset: stickyOffset
   });
 
   $('.js--section-project-other').waypoint(function(direction) {
@@ -87,7 +99,7 @@ $(document).ready(function() {
       $('nav').addClass('sticky-white');
     }
   }, {
-      offset: '60px;'
+      offset: stickyOffset
   });
 
   $('.js--section-contact').waypoint(function(direction) {
@@ -99,9 +111,14 @@ $(document).ready(function() {
       $('nav').addClass('sticky-black');
     }
   }, {
-      offset: '60px;'
+      offset: stickyOffset
   });
 
+  /* ============================= */  
+  /* ------For the slideshow------ */
+  /* ============================= */
+
+  // Initialize the slideshow at the first slide!
   var slideIndex = 1;
   showSlides(slideIndex);
 
@@ -115,6 +132,7 @@ $(document).ready(function() {
     showSlides(slideIndex = n);
   }
 
+  // The slideshow!
   function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("slides");
@@ -131,6 +149,7 @@ $(document).ready(function() {
   dots[slideIndex-1].className += " active";
   }
 
+  // Slideshow controls
   $('.prev').click(function () {
     plusSlides(-1)
   });
@@ -147,24 +166,33 @@ $(document).ready(function() {
     currentSlide(3)
   });
 
-  /* Scroll on buttons */
+  /* =============================== */  
+  /* For the buttons that scroll you */
+  /* =============================== */
+
+  var scrollTime = 1000;
+  var scrollOffset = 66;
+
   $('.js--scroll-to-main').click(function () {
-      $('html, body').animate({scrollTop: $('.js--section-main').offset().top}, 1000);
+      $('html, body').animate({scrollTop: ($('.js--section-main').offset().top-scrollOffset)}, scrollTime);
   });
   $('.js--scroll-to-contact').click(function () {
-      $('html, body').animate({scrollTop: $('.js--section-contact').offset().top}, 1000);
+      $('html, body').animate({scrollTop: $('.js--section-contact').offset().top-scrollOffset}, scrollTime);
   });
   $('.js--scroll-to-gr').click(function () {
-    $('html, body').animate({scrollTop: $('.js--section-project-gr').offset().top}, 1000);
+    $('html, body').animate({scrollTop: $('.js--section-project-gr').offset().top-scrollOffset}, scrollTime);
   });
   $('.js--scroll-to-dmb').click(function () {
-    $('html, body').animate({scrollTop: $('.js--section-project-dmb').offset().top}, 1000);
+    $('html, body').animate({scrollTop: $('.js--section-project-dmb').offset().top-scrollOffset}, scrollTime);
   });
   $('.js--scroll-to-ph').click(function () {
-    $('html, body').animate({scrollTop: $('.js--section-project-ph').offset().top}, 1000);
+    $('html, body').animate({scrollTop: $('.js--section-project-ph').offset().top-scrollOffset}, scrollTime);
+  });
+  $('.js--scroll-to-other').click(function () {
+    $('html, body').animate({scrollTop: $('.js--section-project-other').offset().top-scrollOffset}, scrollTime);
   });
   $('.js--scroll-to-top').click(function () {
-    $('html, body').animate({scrollTop: $('#header').offset().top}, 1000);
+    $('html, body').animate({scrollTop: $('#header').offset().top}, scrollTime);
   });
   
   // Modals
