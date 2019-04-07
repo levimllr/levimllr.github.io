@@ -40,22 +40,91 @@
 
 /* Small phones to small tablets: from 481 to 767px */
 @media only screen and (max-width: 767px) {
+    header { height: auto;}
     body { font-size: 16px; }
-    section { padding: 30px, 0; height: 100%;}
+    section { padding: 30px, 0; height: auto;}
+    
+    .hero-column {
+        display: block;
+        position: relative;
+        height: auto;
+    }
+
+    .hero-text-box {
+        padding-left: 2%; 
+        text-align: center;
+        position: relative;
+        top: 0%;
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);
+    }
+
+    .slideshow-container {
+        max-width: 1000px;
+        width: 100%;
+        height: 600px;
+        margin-top: 50px;
+        position: relative;
+        top: 0%;
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);
+      }
+
+    .project-column {
+        display: block;
+        position: relative;
+        height: auto;
+    }
+
+    .project-center-box {
+        position: relative;
+        top: 0%;
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);
+        display: block;
+    }
+
+    .project-feature-header {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .project-feature {
+        width: fit-content;
+        margin-left: 5%;
+        margin-right: auto;        
+    }
+
+    .other-project-list {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;      
+    }
+
+    section img {
+        width: 100%;
+    }
     
     .long-copy {
         width: 100%;
         margin-left: 00%;
     }
     
-    h1 {font-size: 180%; }
-    h2 {font-size: 150%; }
+    h1 {font-size: 280%; }
+    h2 {font-size: 250%; }
+    h3 {font-size: 160%; }
+    h4 {font-size: 130%; }
+    h5 {font-size: 120%; }
     
     .row,
     .hero-text-box { padding: 0 4%; }
     .col { 
         width: 100%;
         margin: 0 0 4% 0;
+    }
+
+    .hero-row {
+        height: 30%;
     }
     
     .main-nav { display: none; }
@@ -102,6 +171,12 @@
 
     section {
         text-align: center;
+    }
+
+    .contact-links {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
