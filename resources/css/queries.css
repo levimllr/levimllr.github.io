@@ -62,7 +62,7 @@
     .slideshow-container {
         max-width: 1000px;
         width: 100%;
-        height: 600px;
+        height: 600px;7
         margin-top: 50px;
         position: relative;
         top: 0%;
@@ -130,10 +130,18 @@
     .main-nav { display: none; }
     .mobile-nav-icon {display: inline-block;}
     
+    nav {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.0));
+    }
+
     .main-nav {
         float: left;
-        margin-top: 35px;
-        margin-left: 25px;
+        margin-top: 0px;
+        margin-bottom: 35px;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: center;
     }
     
     .main-nav li {
@@ -148,11 +156,13 @@
         font-size: 100%;
     }
     
+
     .sticky .main-nav { margin-top: 10px; }
 
     .sticky .main-nav li a:link,
     .sticky .main-nav li a:visited { padding: 10px 0; }   
-    .sticky .mobile-nav-icon { margin-top: 10px; }
+    .sticky-white .mobile-nav-icon { margin-top: 16px; }
+    .sticky-black .mobile-nav-icon { margin-top: 16px; }
     .sticky .mobile-nav-icon i { color: #555; }
     
     .app-screen { width: 40%; }
