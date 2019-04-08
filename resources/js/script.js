@@ -6,16 +6,21 @@ $(document).ready(function() {
 
   const $navEl = $('nav');
 
+  var stickyOffset = '66px;';
+
   /** When scrolling to the top of the page, remove animation
    * and style classes from the sticky header. */
-  $(window).scroll(function() {
-    var scrollTop = $(window).scrollTop();
-    if (scrollTop < 249) {
-      $navEl.removeClass('fadeOutUp animated sticky-black');
-    }
+  $('#header').waypoint(function(direction)  {
+    if (direction == 'down') {
+      // $navEl.removeClass('fadeOutUp')
+      //       .addClass('fadeInDown animated sticky-black')
+    } else { 
+      $navEl.removeClass('fadeOutUp animated sticky-black')
+            // .addClass('fadeOutUp animated sticky-black')
+    } 
+  }, {
+      offset: '-700px'
   });
-
-  var stickyOffset = '66px;';
 
   /* When scrolling down into the main section of the site,
   fade in the sticky header. When scrolling up and out,
@@ -196,14 +201,18 @@ $(document).ready(function() {
     captionText.innerHTML = `<p style='text-align: center; color: #fff'>${img.alt}</p>`;
 
     // Get the <span> element that closes the modal
-    var span = document.querySelector(`.close`);
+    var span = document.querySelectorAll(`.close`);
     console.log(span);
 
     // When the user clicks on <span> (x), close the modal
     
-    span.onclick = function() { 
+    // span.onclick = function() { 
+    //   modal.style.display = 'none';
+    //   }
+
+    $('.close').click(function () {
       modal.style.display = 'none';
-      }
+    });
 
     window.onclick = function(event) {
       if (event.target == modal) {
@@ -211,6 +220,8 @@ $(document).ready(function() {
       }
     }
   } 
+
+
 
   $('#grConfigImg').click(function () {
     triggerModal('grConfigImg');

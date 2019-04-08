@@ -129,6 +129,44 @@
             </div>
         </section>
 
+            <!-- The Modal -->
+            <div id="grConfigImg-modal" class="modal">
+
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="grConfigImg-modalImg">
+
+                <!-- Modal Caption (Image Text) -->
+                <div class="modal-caption" id="grConfigImg-caption"></div>
+            </div>
+            <div id="grExerciseImg-modal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="grExerciseImg-modalImg">
+                <div class="modal-caption" id="grExerciseImg-caption">Caption</div>
+            </div>
+            <div id="dmbProtoImg-modal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="dmbProtoImg-modalImg">
+                <div class="modal-caption" id="dmbProtoImg-caption"></div>
+            </div>
+            <div id="dmbModelImg-modal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="dmbModelImg-modalImg">
+                <div class="modal-caption" id="dmbModelImg-caption"></div>
+            </div>
+            <div id="phupdateImg-modal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="phupdateImg-modalImg">
+                <div class="modal-caption" id="phupdateImg-caption"></div>
+            </div>
+            <div id="phbothImg-modal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="phbothImg-modalImg">
+                <div class="modal-caption" id="phbothImg-caption"></div>
+            </div>
+
         <section class="section-project-gr js--section-project-gr">
             <div class="row black-and-white">
                 <div class="col span-1-of-2 box fill-row project-column">
@@ -136,26 +174,11 @@
                         <!-- Trigger the Modal -->
                         <img id="grConfigImg" src="resources/img/gifferreborngif.png" alt="Arduino Visualizer output. The site takes C++ code input into the Ace Editor, interprets it into JavaScript, and creates a .gif simulating hardware interfaced with an Arduino.">
                         <p>Arduino Visualizer output. The site takes C++ code input into the Ace Editor, interprets it into JavaScript, and creates a .gif simulating hardware interfaced with an Arduino.</p>
-                        <!-- The Modal -->
-                        <div id="grConfigImg-modal" class="modal">
 
-                            <!-- The Close Button -->
-                            <span class="close">&times;</span>
-
-                            <!-- Modal Content (The Image) -->
-                            <img class="modal-content" id="grConfigImg-modalImg">
-
-                            <!-- Modal Caption (Image Text) -->
-                            <div id="grConfigImg-caption"></div>
-                        </div>
 
                         <img id="grExerciseImg" src="resources/img/gifferrebornexercise.png" alt="Arduino Visualizer Exercise Generator. This feature allows the instructor to make an exercise in one click given three source files." onClick="triggerModal(this.id)">
                         <p>Arduino Visualizer Exercise Generator. This feature allows the instructor to make an exercise in one click given three source files.</p>
-                        <div id="grExerciseImg-modal" class="modal">
-                            <span class="close">&times;</span>
-                            <img class="modal-content" id="grExerciseImg-modalImg">
-                            <div id="grExerciseImg-caption">Caption</div>
-                        </div>
+                        
                     </div>
                 </div>
                 <article class="col span-1-of-2 box project-column">
@@ -222,19 +245,11 @@
                     <div class="project-center-box">
                         <img id="dmbProtoImg" src="resources/img/dmbproto.png" alt="Digital Music Box prototype. The prototype has 3 tracks available for composition on the drum with metal pegs, which trigger sounds from the MIDI module.">
                         <p>Digital Music Box prototype. The prototype has 3 tracks available for composition on the drum with metal pegs, which trigger sounds from the MIDI module.</p>
-                        <div id="dmbProtoImg-modal" class="modal">
-                            <span class="close">&times;</span>
-                            <img class="modal-content" id="dmbProtoImg-modalImg">
-                            <div id="dmbProtoImg-caption"></div>
-                        </div>
+                        
 
                         <img id="dmbModelImg" src="resources/img/dmbmodel.png" alt="Digital Music Box full model. The final product will have a removable drum with 12 programmable tracks and a touch-screen GUI.">
                         <p>Digital Music Box full model. The final product will have a removable drum with 12 programmable tracks and a touch-screen GUI.</p>
-                        <div id="dmbModelImg-modal" class="modal">
-                            <span class="close">&times;</span>
-                            <img class="modal-content" id="dmbModelImg-modalImg">
-                            <div id="dmbModelImg-caption"></div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -246,19 +261,11 @@
                     <div class="project-center-box">    
                         <img id="phupdateImg" src="resources/img/phupdate.png" alt="The PiHabits IoT habit tracker is fully responsive and gives users a platform to log their habit activity from any device.">
                         <p>The PiHabits IoT habit tracker is fully responsive and gives users a platform to log their habit activity from any device.</p>
-                        <div id="phupdateImg-modal" class="modal">
-                            <span class="close">&times;</span>
-                            <img class="modal-content" id="phupdateImg-modalImg">
-                            <div id="phupdateImg-caption"></div>
-                        </div>
+                        
 
                         <img id="phbothImg" src="resources/img/phboth.jpg" alt="PiHabits displays a unique activity heatmap for each user on its site and on an LED grid. The intensity and color of the LEDs indicates activity frequency and streaks. ">
                         <p>PiHabits displays a unique activity heatmap for each user on its site and on an LED grid. The intensity and color of the LEDs indicates activity frequency and streaks.</p>
-                        <div id="phbothImg-modal" class="modal">
-                            <span class="close">&times;</span>
-                            <img class="modal-content" id="phbothImg-modalImg">
-                            <div id="phbothImg-caption"></div>
-                        </div>
+                        
                     </div>
                 </div>
                 <article class="col span-1-of-2 box project-column">
@@ -355,7 +362,7 @@
                     <div class="project-box">
                         <a href="https://github.com/levimllr/pig-js-app" target="_blank"><img src="resources/img/pigsnap.png" alt="Pig Dice Game">
                         <h3>Jeopardy Dice Game</h3></a>
-                        <h5>A competitive game of change.</h5>
+                        <h5>A competitive game of chance.</h5>
                         <div class="other-project-list">
                             <h4>Software:</h4>
                             <ul>
@@ -416,9 +423,6 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
-        <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
-        <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
         <script src="vendors/js/jquery.waypoints.min.js"></script>
         <script src="resources/js/script.js"></script>
 
