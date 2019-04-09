@@ -39,22 +39,19 @@
                 </div>
             </nav>
             <div class="row hero-row">
-                <div class="col span-1-of-3 box hero-column">
                     <div class="hero-text-box">
                         <h1>Hi, I'm Levi!</h1>
                         <h3>
                             I'm a software engineer with a background in engineering education and material science.
                             <br>
-                            <br>
                             I love working with teams to build responsive projects in technology that bring people together.
                         </h3>
                         <a class="btn btn-full js--scroll-to-main" href="#">Projects</a>
                         <a class="btn btn-ghost js--scroll-to-contact" href="#">Contact</a>
-                    </div>
                 </div>
-                <div class="col span-2-of-3 box hero-column">
+                <!-- <div class="col span-2-of-3 box hero-column">
                     <div class="slideshow-container">
-                        <!-- Full-width images with number and caption text -->
+                        Full-width images with number and caption text
                         <div class="slides fade">
                             <div class="numbertext">1 / 3</div>
                             <img src="resources/img/gifferrebornexercise.png" style="width:100%" alt="Arduino Visualizer: A virtual Arduino hardware coding platform.">
@@ -73,22 +70,22 @@
                             <div class="text">Pi Habits: An IoT habit tracker. The landing page shows a habit heatmap (ala GitHub) which is synced with a grid of LEDs to give a stimulating log of activity.</div>
                         </div>
                         
-                        <!-- Next and previous buttons 
+                        Next and previous buttons 
                         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>-->
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
                         <a class="prev">&#10094;</a>
                         <a class="next">&#10095;</a>
 
-                        <!-- The dots/circles -->
+                        The dots/circles
                         <div class="dot-array" style="text-align:center">
                                 <span class="dot dot1"></span> 
                                 <span class="dot dot2"></span> 
                                 <span class="dot dot3"></span> 
-                            </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
+            </div>
         </header>
 
         <section class="section-main js--section-main" id="main" role="main">
@@ -100,7 +97,8 @@
                     <div class="project-box">
                         <img src="resources/img/gifferrebornconfig.png" alt="Arduino Visualizer">
                         <h4>Arduino Visualizer</h4>
-                        <h5>A virtual Arduino coding platform.</h5>
+                        <h5>A virtual Arduino coding platform</h5>
+                        <p>"Generate Exercise" is a feature that allows the instructor to make an exercise in one click given three source files.</p>
                         <div>
                             <a class="btn btn-full js--scroll-to-gr" href="#">Details</a>
                         </div>
@@ -110,7 +108,8 @@
                         <div class="project-box">
                             <img src="resources/img/dmbprotoangle.jpg" alt="Digital Music Box">
                             <h4>Digital Music Box</h4>
-                            <h5>A mechatronic song composer.</h5>
+                            <h5>A mechatronic song composer</h5>
+                            <p>The prototype has 3 tracks available for composition on the drum with metal pegs, which trigger sounds from the MIDI module.</p>
                             <div>
                                 <a class="btn btn-full js--scroll-to-dmb" href="#">Details</a>
                             </div>
@@ -120,7 +119,8 @@
                     <div class="project-box">
                         <img src="resources/img/phboth.jpg" alt="Arduino Visualizer">
                         <h4>Pi Habits</h4>
-                        <h5>An IoT habit tracker.</h5>
+                        <h5>An IoT habit tracker</h5>
+                        <p>The landing page shows a habit heatmap (ala GitHub) which is synced with a grid of LEDs to give a stimulating log of activity.</p>
                         <div>
                             <a class="btn btn-full js--scroll-to-ph" href="#">Details</a>
                         </div>
@@ -185,7 +185,7 @@
                     <div class="project-center-box">
                         <div class="project-feature-header">
                             <h1><a href="https://dpengineering.github.io/giffer-reborn/index.html" target="_blank">Arduino Visualizer</a></h1>
-                            <h3>A virtual Arduino coding platform. </h3>
+                            <h3>A virtual Arduino coding platform</h3>
                         </div>
                         <div class="project-feature">
                             <h4>Software:</h4>
@@ -200,11 +200,15 @@
                         <div class="project-feature">
                                 <h4>Features:</h4>
                             <ul>
-                                <li><ion-icon name="checkbox"></ion-icon>400+ use to learn hardware programming</li>
-                                <li><ion-icon name="checkbox"></ion-icon>Simulates light/motor output and sensor input</li>
-                                <li><ion-icon name="checkbox"></ion-icon>.gif renders from Javascript-intepreted C++</li>
-                                <li><ion-icon name="checkbox"></ion-icon>Generates exercises in 1 click with source code</li>
+                                <li><ion-icon name="checkmark"></ion-icon>400+ use to learn hardware programming</li>
+                                <li><ion-icon name="checkmark"></ion-icon>Simulates light/motor output and sensor input</li>
+                                <li><ion-icon name="checkmark"></ion-icon>.gif renders from Javascript-intepreted C++</li>
+                                <li><ion-icon name="checkmark"></ion-icon>Generates exercises in 1 click with source code</li>
                             </ul>
+                        </div>
+                        <div class="project-buttons">
+                            <a class="btn btn-full js--scroll-to-main" href="https://dpengineering.github.io/giffer-reborn/index.html" target="_blank"><ion-icon name="link"></ion-icon>Site</a>
+                            <a class="btn btn-ghost js--scroll-to-contact" href="https://github.com/dpengineering/giffer-reborn" target="_blank"><ion-icon name="code"></ion-icon>Source</a>
                         </div>
                     </div>
                 </article>
@@ -213,11 +217,22 @@
 
         <section class="section-project-dmb js--section-project-dmb">
             <div class="row white-and-black">
+                <div class="col span-1-of-2 box project-column">
+                    <div class="project-center-box">
+                        <img id="dmbProtoImg" src="resources/img/dmbproto.png" alt="Digital Music Box prototype. The prototype has 3 tracks available for composition on the drum with metal pegs, which trigger sounds from the MIDI module.">
+                        <p>Digital Music Box prototype. The prototype has 3 tracks available for composition on the drum with metal pegs, which trigger sounds from the MIDI module.</p>
+                        
+
+                        <img id="dmbModelImg" src="resources/img/dmbmodel.png" alt="Digital Music Box full model. The final product will have a removable drum with 12 programmable tracks and a touch-screen GUI.">
+                        <p>Digital Music Box full model. The final product will have a removable drum with 12 programmable tracks and a touch-screen GUI.</p>
+                        
+                    </div>
+                </div>
                 <article class="col span-1-of-2 box project-column">
                     <div class="project-center-box">
                         <div class="project-feature-header">
                             <h1><a href="https://github.com/levimllr/DigitalMusicBox" target="_blank">Digital Music Box</a></h1>
-                            <h3>A mechatronic song composer.</h3>
+                            <h3>A mechatronic song composer</h3>
                         </div>
                         <div class="project-feature">
                             <h4>Software and hardware:</h4>
@@ -232,26 +247,19 @@
                         <div class="project-feature">
                             <h4>Features:</h4>
                             <ul>
-                                <li><ion-icon name="checkbox"></ion-icon>Allows for different notes, instruments, tempos</li>
-                                <li><ion-icon name="checkbox"></ion-icon>Capacitavely senses movable metal pins</li>
-                                <li><ion-icon name="checkbox"></ion-icon>Mixes tracks with a MIDI sound module</li>
-                                <li><ion-icon name="checkbox"></ion-icon>Manages data with Arduino + Raspberry Pi</li>
-                                <li><ion-icon name="checkbox"></ion-icon>WIP: Touch-screen interface</li>
+                                <li><ion-icon name="checkmark"></ion-icon>Allows for different notes, instruments, tempos</li>
+                                <li><ion-icon name="checkmark"></ion-icon>Capacitavely senses movable metal pins</li>
+                                <li><ion-icon name="checkmark"></ion-icon>Mixes tracks with a MIDI sound module</li>
+                                <li><ion-icon name="checkmark"></ion-icon>Manages data with Arduino + Raspberry Pi</li>
+                                <li><ion-icon name="checkmark"></ion-icon>WIP: Touch-screen interface</li>
                             </ul>
+                        </div>
+                        <div class="project-buttons">
+                            <a class="btn btn-full js--scroll-to-main" href="#" target="_blank"><ion-icon name="play"></ion-icon>Video</a>
+                            <a class="btn btn-ghost js--scroll-to-contact" href="https://github.com/dpengineering/DigitalMusicBox" target="_blank"><ion-icon name="code"></ion-icon>Source</a>
                         </div>
                     </div>
                 </article>
-                <div class="col span-1-of-2 box project-column">
-                    <div class="project-center-box">
-                        <img id="dmbProtoImg" src="resources/img/dmbproto.png" alt="Digital Music Box prototype. The prototype has 3 tracks available for composition on the drum with metal pegs, which trigger sounds from the MIDI module.">
-                        <p>Digital Music Box prototype. The prototype has 3 tracks available for composition on the drum with metal pegs, which trigger sounds from the MIDI module.</p>
-                        
-
-                        <img id="dmbModelImg" src="resources/img/dmbmodel.png" alt="Digital Music Box full model. The final product will have a removable drum with 12 programmable tracks and a touch-screen GUI.">
-                        <p>Digital Music Box full model. The final product will have a removable drum with 12 programmable tracks and a touch-screen GUI.</p>
-                        
-                    </div>
-                </div>
             </div>
         </section>
 
@@ -272,7 +280,7 @@
                     <div class="project-center-box">
                         <div class="project-feature-header">
                             <h1><a href="https://www.youtube.com/watch?v=RwNhhZVvWiA" target="_blank">Pi Habits</a></h1>
-                            <h3>An IoT habit tracker.</h3>
+                            <h3>An IoT habit tracker</h3>
                         </div>
                         <div class="project-feature">
                             <h4>Software and hardware:</h4>
@@ -287,12 +295,16 @@
                         <div class="project-feature">
                             <h4>Features:</h4>
                             <ul>
-                                <li><ion-icon name="checkbox"></ion-icon>Online heatmap syncs with LED grid</li>
-                                <li><ion-icon name="checkbox"></ion-icon>SQL database tracks users, habits, history</li>
-                                <li><ion-icon name="checkbox"></ion-icon>Activity frequency reflects in color, brightness</li>
-                                <li><ion-icon name="checkbox"></ion-icon>Raspberry Pi hosts site server</li>
-                                <li><ion-icon name="checkbox"></ion-icon>Tracks and indicates streaks</li>
+                                <li><ion-icon name="checkmark"></ion-icon>Online heatmap syncs with LED grid</li>
+                                <li><ion-icon name="checkmark"></ion-icon>SQL database tracks users, habits, history</li>
+                                <li><ion-icon name="checkmark"></ion-icon>Activity frequency reflects in color, brightness</li>
+                                <li><ion-icon name="checkmark"></ion-icon>Raspberry Pi hosts site server</li>
+                                <li><ion-icon name="checkmark"></ion-icon>Tracks and indicates streaks</li>
                             </ul>
+                        </div>
+                        <div class="project-buttons">
+                            <a class="btn btn-full js--scroll-to-main" href="https://www.youtube.com/watch?v=RwNhhZVvWiA" target="_blank"><ion-icon name="play"></ion-icon>Video</a>
+                            <a class="btn btn-ghost js--scroll-to-contact" href="https://github.com/levimllr/pi-habits" target="_blank"><ion-icon name="code"></ion-icon>Source</a>
                         </div>
                     </div>
                 </article>
@@ -308,7 +320,7 @@
                     <div class="project-box">
                         <a href="https://www.organicsoupkitchen.org/" target="_blank"><img src="resources/img/osksnap.png" alt="Organic Soup Kitchen Screenshot">
                         <h3>Organic Soup Kitchen Site</h3></a>
-                        <h5>A non-profit organization hub.</h5>
+                        <h5>A non-profit organization hub</h5>
                         <div class="other-project-list">
                             <h4>Software:</h4>
                             <ul>
@@ -324,9 +336,9 @@
                         <div class="other-project-list">
                             <h4>Features:</h4>
                             <ul>
-                                <li><ion-icon name="checkbox"></ion-icon>Integrates MailChimp,  DonorBox</li>
-                                <li><ion-icon name="checkbox"></ion-icon>Syncs with Salesforce</li>
-                                <li><ion-icon name="checkbox"></ion-icon>Easy to maintain and use.</ion-icon></li>
+                                <li><ion-icon name="checkmark"></ion-icon>Integrates MailChimp,  DonorBox</li>
+                                <li><ion-icon name="checkmark"></ion-icon>Syncs with Salesforce</li>
+                                <li><ion-icon name="checkmark"></ion-icon>Easy to maintain and use.</ion-icon></li>
                             </ul>
                         </div>
                     </div>
@@ -335,7 +347,7 @@
                     <div class="project-box">
                         <a href="https://www.kclu.org/post/new-exhibits-south-coast-museum-created-high-school-engineering-students#stream/0" target="_blank"><img src="resources/img/bernoulliblower.png" alt="Bernoulli Blower Game">
                         <h3>Bernoulli Blower Game</h3></a>
-                        <h5>An interactive exhibit of fluid dynamics.</h5>
+                        <h5>An interactive exhibit of fluid dynamics</h5>
                         <div class="other-project-list">
                             <h4>Software and hardware:</h4>
                             <ul>
@@ -351,18 +363,18 @@
                         <div class="other-project-list">
                             <h4>Features:</h4>
                             <ul>
-                                <li><ion-icon name="checkbox"></ion-icon>Blower controlled by joystick</li>
-                                <li><ion-icon name="checkbox"></ion-icon>Modular obstacle course</li>
-                                <li><ion-icon name="checkbox"></ion-icon>Astroturf + border control ball</li>
+                                <li><ion-icon name="checkmark"></ion-icon>Blower controlled by joystick</li>
+                                <li><ion-icon name="checkmark"></ion-icon>Modular obstacle course</li>
+                                <li><ion-icon name="checkmark"></ion-icon>Astroturf + border control ball</li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col span-1-of-3 box">
                     <div class="project-box">
-                        <a href="https://github.com/levimllr/pig-js-app" target="_blank"><img src="resources/img/pigsnap.png" alt="Pig Dice Game">
+                        <a href="/pig/index.html" target="_blank"><img src="resources/img/pigsnap.png" alt="Pig Dice Game">
                         <h3>Jeopardy Dice Game</h3></a>
-                        <h5>A competitive game of chance.</h5>
+                        <h5>A competitive game of chance</h5>
                         <div class="other-project-list">
                             <h4>Software:</h4>
                             <ul>
@@ -379,10 +391,9 @@
                         <div class="other-project-list">
                             <h4>Features:</h4>
                             <ul>
-                                <li><ion-icon name="checkbox"></ion-icon>Infinitely replayable</li>
-                                <li><ion-icon name="checkbox"></ion-icon>Multiplayer</li>
-                                <li><ion-icon name="checkbox"></ion-icon>Modern, responsive design</li>
-
+                                <li><ion-icon name="checkmark"></ion-icon>Infinitely replayable</li>
+                                <li><ion-icon name="checkmark"></ion-icon>Multiplayer</li>
+                                <li><ion-icon name="checkmark"></ion-icon>Modern, responsive design</li>
                             </ul>
                         </div>
                     </div>

@@ -100,7 +100,7 @@ $(document).ready(function() {
   /* ============================= */  
   /* ------For the slideshow------ */
   /* ============================= */
-
+/*
   // Initialize the slideshow at the first slide!
   var slideIndex = 1;
   showSlides(slideIndex);
@@ -148,7 +148,7 @@ $(document).ready(function() {
   $('.dot3').click(function () {
     currentSlide(3)
   });
-
+*/
   /* =============================== */  
   /* For the buttons that scroll you */
   /* =============================== */
