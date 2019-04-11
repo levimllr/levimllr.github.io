@@ -19,13 +19,12 @@
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
 
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
          
         <title>Levi Miller</title>
         
     </head>
-
     <body>
         <header id="header">
             <nav>
@@ -92,40 +91,40 @@
 
         <section class="section-main js--section-main" id="main" role="main">
             <div class="row">            
-                <h2>Recent Projects</h2>
+                <h1>Recent Projects</h1>
             </div>
-            <div class="row">
-                <div class="col span-1-of-3 box">
-                    <div class="project-box">
-                        <img src="resources/img/gifferrebornconfig.png" alt="Arduino Visualizer">
+            <div class="row menu-row">
+                <div class="col span-1-of-3 box menu-col">
+                    <div class="project-box menu-box">
+                        <img class="menu-img" src="resources/img/gifferrebornconfig.png" alt="Arduino Visualizer">
                         <h4>Arduino Visualizer</h4>
                         <h5>A virtual Arduino coding platform</h5>
-                        <p>"Generate Exercise" is a feature that allows the instructor to make an exercise in one click given three source files.</p>
-                        <div>
-                            <a class="btn btn-full js--scroll-to-gr" href="#">Details</a>
-                        </div>
+                        <p class="menu-p">"Generate Exercise" is a feature that allows the instructor to make an exercise in one click given three source files.</p>
+                    </div>
+                    <div>
+                        <a class="btn btn-full btn-menu js--scroll-to-gr" href="#">Details</a>
                     </div>
                 </div>
                 <div class="col span-1-of-3 box">
                         <div class="project-box">
-                            <img src="resources/img/dmbprotoangle.jpg" alt="Digital Music Box">
+                            <img class="menu-img" src="resources/img/dmbprotoangle.jpg" alt="Digital Music Box">
                             <h4>Digital Music Box</h4>
                             <h5>A mechatronic song composer</h5>
-                            <p>The prototype has 3 tracks available for composition on the drum with metal pegs, which trigger sounds from the MIDI module.</p>
-                            <div>
-                                <a class="btn btn-full js--scroll-to-dmb" href="#">Details</a>
-                            </div>
+                            <p class="menu-p">The prototype has 3 tracks available for composition on the drum with metal pegs, which trigger sounds from the MIDI module.</p>
+                        </div>
+                        <div>
+                            <a class="btn btn-full menu-btn js--scroll-to-dmb" href="#">Details</a>
                         </div>
                 </div>
                 <div class="col span-1-of-3 box">
                     <div class="project-box">
-                        <img src="resources/img/phboth.jpg" alt="Arduino Visualizer">
+                        <img class="menu-img" src="resources/img/phboth.jpg" alt="Arduino Visualizer">
                         <h4>Pi Habits</h4>
                         <h5>An IoT habit tracker</h5>
-                        <p>The landing page shows a habit heatmap (ala GitHub) which is synced with a grid of LEDs to give a stimulating log of activity.</p>
-                        <div>
-                            <a class="btn btn-full js--scroll-to-ph" href="#">Details</a>
-                        </div>
+                        <p class="menu-p">The landing page shows a habit heatmap (ala GitHub) which is synced with a grid of LEDs to give a stimulating log of activity.</p>
+                    </div>
+                    <div>
+                        <a class="btn btn-full btn-menu js--scroll-to-ph" href="#">Details</a>
                     </div>
                 </div>
             </div>
@@ -171,18 +170,6 @@
 
         <section class="section-project-gr js--section-project-gr">
             <div class="row black-and-white">
-                <div class="col span-1-of-2 box fill-row project-column">
-                    <div class="project-center-box">
-                        <!-- Trigger the Modal -->
-                        <img id="grConfigImg" src="resources/img/gifferreborngif.png" alt="Arduino Visualizer output. The site takes C++ code input into the Ace Editor, interprets it into JavaScript, and creates a .gif simulating hardware interfaced with an Arduino.">
-                        <p>Arduino Visualizer output. The site takes C++ code input into the Ace Editor, interprets it into JavaScript, and creates a .gif simulating Arduino hardware.</p>
-
-
-                        <img id="grExerciseImg" src="resources/img/gifferrebornexercise.png" alt="Arduino Visualizer Exercise Generator. This feature allows the instructor to make an exercise in one click given three source files." onClick="triggerModal(this.id)">
-                        <p>Arduino Visualizer Exercise Generator. This feature allows the instructor to make an exercise in one click given three source files.</p>
-                        
-                    </div>
-                </div>
                 <article class="col span-1-of-2 box project-column">
                     <div class="project-center-box">
                         <div class="project-feature-header">
@@ -214,22 +201,23 @@
                         </div>
                     </div>
                 </article>
+                <div class="col span-1-of-2 box fill-row project-column">
+                    <div class="project-center-box">
+                        <!-- Trigger the Modal -->
+                        <img id="grConfigImg" src="resources/img/gifferreborngif.png" alt="Arduino Visualizer output. The site takes C++ code input into the Ace Editor, interprets it into JavaScript, and creates a .gif simulating hardware interfaced with an Arduino.">
+                        <p>Arduino Visualizer output. The site takes C++ code input into the Ace Editor, interprets it into JavaScript, and creates a .gif simulating Arduino hardware.</p>
+
+
+                        <img id="grExerciseImg" src="resources/img/gifferrebornexercise.png" alt="Arduino Visualizer Exercise Generator. This feature allows the instructor to make an exercise in one click given three source files." onClick="triggerModal(this.id)">
+                        <p>Arduino Visualizer Exercise Generator. This feature allows the instructor to make an exercise in one click given three source files.</p>
+                        
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="section-project-dmb js--section-project-dmb">
             <div class="row white-and-black">
-                <div class="col span-1-of-2 box project-column">
-                    <div class="project-center-box">
-                        <img id="dmbProtoImg" src="resources/img/dmbproto.png" alt="Digital Music Box prototype. The prototype has 3 tracks available for composition on the drum with metal pegs, which trigger sounds from the MIDI module.">
-                        <p>Digital Music Box prototype. The prototype has 3 tracks available for composition with metal pegs on the drum, which trigger the MIDI module.</p>
-                        
-
-                        <img id="dmbModelImg" src="resources/img/dmbmodel.png" alt="Digital Music Box full model. The final product will have a removable drum with 12 programmable tracks and a touch-screen GUI.">
-                        <p>Digital Music Box full model. The final product will have a removable drum with 12 programmable tracks and a touch-screen GUI.</p>
-                        
-                    </div>
-                </div>
                 <article class="col span-1-of-2 box project-column">
                     <div class="project-center-box">
                         <div class="project-feature-header">
@@ -262,22 +250,22 @@
                         </div>
                     </div>
                 </article>
+                <div class="col span-1-of-2 box project-column">
+                    <div class="project-center-box">
+                        <img id="dmbProtoImg" src="resources/img/dmbproto.png" alt="Digital Music Box prototype. The prototype has 3 tracks available for composition on the drum with metal pegs, which trigger sounds from the MIDI module.">
+                        <p>Digital Music Box prototype. The prototype has 3 tracks available for composition with metal pegs on the drum, which trigger the MIDI module.</p>
+                        
+
+                        <img id="dmbModelImg" src="resources/img/dmbmodel.png" alt="Digital Music Box full model. The final product will have a removable drum with 12 programmable tracks and a touch-screen GUI.">
+                        <p>Digital Music Box full model. The final product will have a removable drum with 12 programmable tracks and a touch-screen GUI.</p>
+                        
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="section-project-ph js--section-project-ph">
             <div class="row black-and-white">
-                <div class="col span-1-of-2 box project-column">
-                    <div class="project-center-box">    
-                        <img id="phupdateImg" src="resources/img/phupdate.png" alt="The PiHabits IoT habit tracker is fully responsive and gives users a platform to log their habit activity from any device.">
-                        <p>The PiHabits IoT habit tracker is fully responsive and gives users a platform to log their habit activity from any device.</p>
-                        
-
-                        <img id="phbothImg" src="resources/img/phboth.jpg" alt="PiHabits displays a unique activity heatmap for each user on its site and on an LED grid. The intensity and color of the LEDs indicates activity frequency and streaks. ">
-                        <p>PiHabits displays a unique activity heatmap for each user on its site and on an LED grid. The intensity and color of the LEDs indicates activity frequency.</p>
-                        
-                    </div>
-                </div>
                 <article class="col span-1-of-2 box project-column">
                     <div class="project-center-box">
                         <div class="project-feature-header">
@@ -310,6 +298,17 @@
                         </div>
                     </div>
                 </article>
+                <div class="col span-1-of-2 box project-column">
+                    <div class="project-center-box">    
+                        <img id="phupdateImg" src="resources/img/phupdate.png" alt="The PiHabits IoT habit tracker is fully responsive and gives users a platform to log their habit activity from any device.">
+                        <p>The PiHabits IoT habit tracker is fully responsive and gives users a platform to log their habit activity from any device.</p>
+                        
+
+                        <img id="phbothImg" src="resources/img/phboth.jpg" alt="PiHabits displays a unique activity heatmap for each user on its site and on an LED grid. The intensity and color of the LEDs indicates activity frequency and streaks. ">
+                        <p>PiHabits displays a unique activity heatmap for each user on its site and on an LED grid. The intensity and color of the LEDs indicates activity frequency.</p>
+                        
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -319,7 +318,7 @@
             </div>
             <article class="row">
                 <div class="col span-1-of-3 box">
-                    <div class="project-box">
+                    <div class="project-box project-feature">
                         <a href="https://www.organicsoupkitchen.org/" target="_blank"><img src="resources/img/osksnap.png" alt="Organic Soup Kitchen Screenshot">
                         <h3>Organic Soup Kitchen Site</h3></a>
                         <h5>A non-profit organization hub</h5>
@@ -334,7 +333,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="project-box">
+                    <div class="project-box project-feature">
                         <div class="other-project-list">
                             <h4>Features:</h4>
                             <ul>
@@ -346,7 +345,7 @@
                     </div>
                 </div>
                 <div class="col span-1-of-3 box">
-                    <div class="project-box">
+                    <div class="project-box project-feature">
                         <a href="https://www.kclu.org/post/new-exhibits-south-coast-museum-created-high-school-engineering-students#stream/0" target="_blank"><img src="resources/img/bernoulliblower.png" alt="Bernoulli Blower Game">
                         <h3>Bernoulli Blower Game</h3></a>
                         <h5>An interactive exhibit of fluid dynamics</h5>
@@ -361,7 +360,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="project-box">
+                    <div class="project-box project-feature">
                         <div class="other-project-list">
                             <h4>Features:</h4>
                             <ul>
@@ -373,7 +372,7 @@
                     </div>
                 </div>
                 <div class="col span-1-of-3 box">
-                    <div class="project-box">
+                    <div class="project-box project-feature">
                         <a href="/pig/index.html" target="_blank"><img src="resources/img/pigsnap.png" alt="Pig Dice Game">
                         <h3>Jeopardy Dice Game</h3></a>
                         <h5>A competitive game of chance</h5>
@@ -389,7 +388,7 @@
                             <br>
                         </div>
                     </div>
-                    <div class="project-box">
+                    <div class="project-box project-feature">
                         <div class="other-project-list">
                             <h4>Features:</h4>
                             <ul>

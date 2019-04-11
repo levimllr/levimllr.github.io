@@ -39,7 +39,7 @@ body {
 .row {
     max-width: 1140px;
     margin: 0 auto;
-    justify-items: center
+    justify-items: center;
 }
 
 section {
@@ -58,11 +58,11 @@ h1,
 h2 {
     font-weight: 700;
     text-transform: none;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Lato', sans-serif;
     /* color: #fff; */
 }
 
-h4, h4 {
+h4 {
     text-transform: none;
 }
 
@@ -83,16 +83,6 @@ h2 {
     margin-top: 20px;
     margin-bottom: 20px;
     letter-spacing: 1px;
-}
-
-h2:after {
-    display: block;
-    height: 2px;
-    background-color: var(--bleu-de-france);
-    content: " ";
-    width: 100px;
-    margin: 0 auto;
-    margin-top: 30px;
 }
 
 h3 {
@@ -293,6 +283,7 @@ nav li {
     margin-left: 32px;
     cursor: pointer; 
     transition: color 0.3s ease;
+    font-family: 'Lato', sans-serif;
 }
 
 .logo:hover,
@@ -305,7 +296,7 @@ nav li {
 .main-nav {
     float: right;
     list-style: none;
-    margin-top: 35px;
+    margin-top: 40px;
 }
 
 .main-nav li {
@@ -423,7 +414,8 @@ nav li {
 
 .sticky-black .main-nav,
 .sticky-white .main-nav { 
-    margin-top: 18px; 
+    margin-top: 20px; 
+    margin-bottom: 20px;
 }
 
 .sticky-black .main-nav li a:link,
@@ -623,10 +615,53 @@ section h1 {
     text-align: center;
 }
 
+.section-main h1,
+.section-other h1 {
+    margin-top: 30px;
+    color: #333;
+}
+
+.section-main h1:after,
+.section-other h1:after {
+    display: block;
+    height: 2px;
+    background-color: var(--bleu-de-france);
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.section-main h4 {
+    margin-top: 10px;
+    font-size: 150%;
+}
+
+.menu-row {
+    display: table;
+}
+
+.menu-col {
+    display: table-cell;
+}
+
+.menu-img {
+    width: 100%;
+}
+
+.menu-p {
+    width: 100%;
+}
+
+.menu-btn {
+    position: relative;
+    bottom: 0;
+}
+
 .project-box {
     text-align: center;
     overflow: hidden;
-    height: 100%;
+    height: 85%;
 }
 
 .project-column {
@@ -895,7 +930,7 @@ section h1 {
 
 .section-other h3 {
     padding-top: 5px;
-    font-size: 120%;
+    /* font-size: 120%; */
 }
 .section-other h5 {
     font-size: 90%;
@@ -903,12 +938,6 @@ section h1 {
 
 .other-project-list {
     padding-top: 20px;
-}
-
-.section-other h4 {
-    text-align: left;
-    padding-top: 10px;
-    padding-left: 10px;
 }
 
 .section-other ul {

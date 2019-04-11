@@ -42,8 +42,27 @@
 @media only screen and (max-width: 767px) {
     header { height: auto;}
     body { font-size: 16px; }
-    section { padding: 30px, 0; height: auto;}
+    section { 
+        padding: 30px, 0; 
+        height: auto;
+        text-align: center;
+    }
     
+    section p {
+        font-size: 120%;
+        width: 100%;
+    }
+
+    .btn {
+
+        margin-top: 15px;
+        margin-bottom: 15px;
+        letter-spacing: 2px;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 120%;
+    }
+
     .hero-column {
         display: block;
         position: relative;
@@ -74,6 +93,27 @@
         display: block;
         position: relative;
         height: auto;
+    }
+
+    .project-box {
+        height: auto;
+    }
+
+    .project-buttons {
+        margin-left: auto;
+        maring-right: auto;
+    }
+
+    .box {
+        height: auto;
+    }
+
+    .section-main h4 {
+        font-size: 190%;
+    }
+
+    .section-main h5 {
+        font-size: 150%;
     }
 
     .project-center-box {
@@ -179,8 +219,15 @@
     font-size: 120%;
     }
 
-    section {
-        text-align: center;
+    .project-feature ul {
+        list-style: none;
+        padding: 20px;
+    }
+    
+    .project-feature ul li {
+        padding: 5px 0;
+        font-size: 120%;
+        text-indent: -2.1em;
     }
 
     .contact-links {
