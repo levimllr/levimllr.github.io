@@ -288,7 +288,7 @@ nav li {
 
 .logo:hover,
 .logo:focus{
-    color: var(--bleu-de-france)
+    color: var(--belize-hole-blue)
 }
 
 /* Main navigation */
@@ -617,7 +617,7 @@ section h1 {
 
 .section-main h1,
 .section-other h1 {
-    margin-top: 30px;
+    margin-top: 5px;
     color: #333;
 }
 
@@ -758,7 +758,7 @@ section h1 {
     padding: 5px 0;
     font-size: 95%;
     /* So that list text wraps underneath text, not icons. */
-    /* text-indent: -2.35em; */
+    text-indent: -2.35em;
 }
 
 .project-feature ion-icon {
@@ -894,6 +894,7 @@ section h1 {
     background-color: #eee;
     color: #333;
     height: 100%;
+    text-align: center;
 }
 
 .section-other .project-box {
@@ -904,40 +905,57 @@ section h1 {
 .section-other img {
     width: 100%;
     height: auto;
-    /* margin-bottom: 15px; */
+    margin-bottom: 15px;
 }
 
-.section-other a:link,
-.section-other a:visited {
-    padding-bottom: 38px;
-    border-bottom: none;
-    border-bottom: 2px solid transparent;
-    -webkit-transition: border-bottom 0.2s;
-    transition: border-bottom 0.2s;
+.section-other .project-buttons {
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.section-other a:hover,
-.section-other a:active,
-.section-other a:focus {
-    padding-bottom: 38px;
-    color: #333;
-    border-bottom: 2px solid var(--bleu-de-france);
+.section-other .btn {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 80%;
 }
+
+.section-other .btn:link,
+.section-other .btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 7px 10px;
+    /* font-weight: 300; */
+    text-decoration: none;
+    border-radius: 4px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.section-other .btn-full ion-icon {
+    color: #fff;
+} 
 
 .section-other h3, h5 {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .section-other h3 {
     padding-top: 5px;
-    /* font-size: 120%; */
-}
-.section-other h5 {
-    font-size: 90%;
+    font-size: 130%;
+    font-weight: 700;
 }
 
-.other-project-list {
-    padding-top: 20px;
+.section-other h4 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.section-other h5 {
+    font-size: 90%;
 }
 
 .section-other ul {
@@ -945,12 +963,14 @@ section h1 {
     padding: 2px;
 }
 
-.section-other ul li {
+.other-project-list ul li {
     padding: 5px 0;
-    /* text-indent: -2.35em; */
+    font-size: 95%;
+    /* So that list text wraps underneath text, not icons. */
+    text-indent: -2.35em;
 }
 
-.section-other ion-icon {
+.other-project-list ion-icon {
     display: inline-block;
     width: 30px;
     /* text-align: center; */
@@ -974,9 +994,10 @@ section h1 {
     padding: 2px;
 }
 
-.project-feature ul li {
+.other-project-list ul li {
     padding: 5px 0;
     text-indent: -2.35em;
+    margin-left: 40px;
 }
 
 .project-feature ion-icon {
