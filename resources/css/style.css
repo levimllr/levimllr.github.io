@@ -351,7 +351,7 @@ nav li {
     border-bottom: 2px solid transparent;
 }
 
-.ion-md-menu {
+/* .ion-md-menu {
     font-size: 200%;
     color: #fff;
     padding-top: 13px;
@@ -361,7 +361,7 @@ nav li {
 .ion-md-close {
     font-size: 200%;
     color: #fff;
-}
+} */
 
 /* Sticky navigation */
 .sticky-black {
