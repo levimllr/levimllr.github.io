@@ -11,10 +11,10 @@
     --bleu-de-france: #2e86de;
     --light-grey-hex: #ddd;
     --light-grey-rgba: rgba(221, 221, 221, 0.95);
-    --light-greydient: linear-gradient(-90deg, #ccc, #eee);
+    --light-greydient: linear-gradient(-90deg, #E0EAFC, #CFDEF3);
     --dark-grey-hex: #222;
     --dark-grey-rgba: rgba(34, 34, 34, 0.95);
-    --dark-greydient: linear-gradient(90deg, #111, #222);
+    --dark-greydient: linear-gradient(90deg, #111, #444);
   }
 
 /* ----------------------------------------------- */
@@ -265,9 +265,6 @@ header {
     transform: translateY(-50%);
 }
 
-nav {
-    background-image: linear-gradient(rgba(170, 170, 170, 0.95), rgba(221, 221, 221, 0.0));
-}
 
 nav li {
     letter-spacing: 2px;
@@ -378,7 +375,8 @@ nav ion-icon {
     width: 100%;
     background-image: none;
     background-color: var(--dark-grey-rgba);
-    box-shadow: 0 2px 2px #222;
+    /* box-shadow: 0 2px 2px #222; */
+    /* box-shadow: 0 2px 1px var(--bleu-de-france); */
     z-index: 9999;
     color: var(--light-grey-rgba);
     transition: background-color 0.3s ease;
@@ -391,7 +389,8 @@ nav ion-icon {
     width: 100%;
     background-image: none;
     background-color: var(--light-grey-rgba);  
-    box-shadow: 0 2px 2px #ccc;
+    /* box-shadow: 0 2px 2px #ccc; */
+    /* box-shadow: 0 1px 1px var(--bleu-de-france); */
     /* Layer stacking! */
     z-index: 9999;
     color: var(--dark-grey-rgba);
