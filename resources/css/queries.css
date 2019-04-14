@@ -13,27 +13,6 @@
     body { font-size: 18px; }
     section { padding: 60px 0; }
     
-    .long-copy {
-        width: 80%;
-        margin-left: 10%;
-    }
-    
-    /* Removing some of the white space. */
-    .steps-box { margin-top: 10px }
-    .steps-box:last-child { margin-top: 10px; }
-    .works-steps { margin-bottom: 40px; }
-    .works-step:last-of-type {margin-bottom: 60px; }
-    
-    .app-screen { width: 50%; }
-    
-    .plan-box {
-        width: 100%;
-        margin-left: 0%;
-    }
-    
-    .plan-price { font-size: 250%; }
-    .contact-form {width: 80%; }
-    
     .main-nav { display: inline-block; }
     
 }
@@ -191,7 +170,7 @@
     }
 
     .hero-text-box {
-        text-align: center;
+        text-align: left;
         position: absolute;
         /* top: 384px; */
         top:50%;

@@ -73,6 +73,7 @@ h1 {
     font-size: 240%;
     word-spacing: 4px;
     letter-spacing: 1px;
+    text-align: left;
 }
 
 h2 {
@@ -93,7 +94,7 @@ h3 {
 }
 
 h4, h5 {
-    text-align: center;
+    text-align: left;
     margin-bottom: 7px;
 }
 
@@ -586,7 +587,7 @@ section p {
     padding-bottom: 10px; */
     padding-top: 10px;
     padding-bottom: 15px;
-    padding-left: 10px;
+    /* padding-left: 10px; */
     padding-right: 10px;
     width: 67%;
     font-size: 75%;
@@ -597,8 +598,8 @@ section p {
 section img {
     padding-top: 10px;
     padding-bottom: 2px;
-    /* padding-left: 10px;
-    padding-right: 10px; */
+    padding-left: 0px;
+    padding-right: 10px;
     width: 67%;
     height: auto;
 }
@@ -612,7 +613,7 @@ section h1 {
     color: #333;
     height: 100%;
     min-height: 540px;
-    text-align: center;
+    text-align: left;
 }
 
 .section-main h1,
@@ -622,19 +623,27 @@ section h1 {
 }
 
 .section-main h1:after,
-.section-other h1:after {
+.section-other h1:after,
+.section-contact h1:after {
     display: block;
     height: 2px;
     background-color: var(--bleu-de-france);
     content: " ";
-    width: 100px;
+    width: 100%;
     margin: 0 auto;
     margin-top: 30px;
 }
 
 .section-main h4 {
+    font-family: Lato;
+    color: var(--bleu-de-france);
     margin-top: 10px;
     font-size: 150%;
+}
+
+.section-main img,
+.section-other img {
+    padding: 0 0;
 }
 
 .menu-row {
@@ -721,10 +730,12 @@ section h1 {
     margin-bottom: 20px;
     padding-top: 10px;
     padding-left: 10px;
+    text-align: left;
 }
 
 .project-feature-header h1 {
     margin-bottom: 15px;
+
 }
 
 .project-feature-header h3 {
@@ -737,7 +748,7 @@ section h1 {
     padding-left: 10px;
     padding-right: 10px;
     margin-top: 10px;
-    margin-left: 50px;
+    margin-left: 87px;
     margin-bottom: 5px;
     text-align: left;
 }
@@ -776,7 +787,8 @@ section h1 {
 }
 
 .project-buttons {
-    text-align: center;
+    text-align: left;
+    margin-top: 20px;
     margin-left: 50px;
 }
 
@@ -939,7 +951,7 @@ input[type=submit] {
 } 
 
 .section-other h3, h5 {
-    text-align: center;
+    text-align: left;
     margin-bottom: 20px;
 }
 
@@ -947,6 +959,8 @@ input[type=submit] {
     padding-top: 5px;
     font-size: 130%;
     font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    color: var(--bleu-de-france);
 }
 
 .section-other h4 {
@@ -1033,6 +1047,10 @@ input[type=submit] {
     background-attachment: fixed;
     color: #fff;
     text-align: left;
+}
+
+.section-contact h1 {
+    color: #fff;
 }
 
 .section-contact ul {
