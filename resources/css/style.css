@@ -323,6 +323,13 @@ nav li {
 }
 
 /* Mobile navi */
+nav ion-icon {
+    font-size: 200%;
+    color: #fff;
+    padding-top: 13px;
+    padding-right: 4px;
+}
+
 .mobile-nav-icon {
     float: right;
     margin-top: 20px;
@@ -350,18 +357,6 @@ nav li {
 .mobile-nav-icon a:focus {
     border-bottom: 2px solid transparent;
 }
-
-/* .ion-md-menu {
-    font-size: 200%;
-    color: #fff;
-    padding-top: 13px;
-    padding-right: 4px;
-}
-
-.ion-md-close {
-    font-size: 200%;
-    color: #fff;
-} */
 
 /* Sticky navigation */
 .sticky-black {
