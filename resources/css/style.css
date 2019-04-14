@@ -9,6 +9,12 @@
 :root {
     --belize-hole-blue: #3498db;
     --bleu-de-france: #2e86de;
+    --light-grey-hex: #ddd;
+    --light-grey-rgba: rgba(221, 221, 221, 0.95);
+    --light-greydient: linear-gradient(-90deg, #ccc, #eee);
+    --dark-grey-hex: #222;
+    --dark-grey-rgba: rgba(34, 34, 34, 0.95);
+    --dark-greydient: linear-gradient(90deg, #111, #222);
   }
 
 /* ----------------------------------------------- */
@@ -23,8 +29,8 @@
 
 html,
 body {
-    background-color: #eee;
-    color: #444;
+    background-color: var(--light-grey-hex);
+    color: var(--dark-grey-hex);
     font-family: 'Roboto', 'Arial', sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -59,7 +65,6 @@ h2 {
     font-weight: 700;
     text-transform: none;
     font-family: 'Lato', sans-serif;
-    /* color: #fff; */
 }
 
 h4 {
@@ -67,13 +72,11 @@ h4 {
 }
 
 h1 {
-    /* color: #fff; */
     margin-top: 0;
     margin-bottom:30px;
     font-size: 240%;
     word-spacing: 4px;
     letter-spacing: 1px;
-    text-align: left;
 }
 
 h2 {
@@ -231,15 +234,13 @@ input[type=submit]:focus {
 /* ----------------------------------------------- */
 
 header {
-    /* background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/dmbproto.png);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/dmbproto.png); */
-    background-color: #111;
+    background-image: var(--light-greydient);
     background-size: cover;
     background-position: center;
     height: 100vh;
     min-height: 768px;
     background-attachment: fixed;
-    color: #fff;
+    color: var(--dark-grey-hex);
 }
 
 .hero-row {
@@ -265,7 +266,7 @@ header {
 }
 
 nav {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0));
+    background-image: linear-gradient(rgba(170, 170, 170, 0.95), rgba(221, 221, 221, 0.0));
 }
 
 nav li {
@@ -308,13 +309,23 @@ nav li {
 .main-nav li a:link,
 .main-nav li a:visited {
     padding: 8px 0;
-    color: #fff;
+    color: var(--dark-grey-rgba);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 90%;
     border-bottom: 2px solid transparent;
     -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
+}
+
+.sticky-black .main-nav li a:link,
+.sticky-black .main-nav li a:visited {
+    color: var(--light-grey-rgba);
+}
+
+.sticky-white .main-nav li a:link,
+.sticky-white .main-nav li a:visited {
+    color: var(--dark-grey-rgba);
 }
 
 .main-nav li a:hover,
@@ -326,7 +337,7 @@ nav li {
 /* Mobile navi */
 nav ion-icon {
     font-size: 200%;
-    color: #fff;
+    /* color: var(--dark-grey-hex); */
     padding-top: 13px;
     padding-right: 4px;
 }
@@ -366,11 +377,10 @@ nav ion-icon {
     left: 0;
     width: 100%;
     background-image: none;
-    background-color: rgba(17, 17, 17, 0.95);   
+    background-color: var(--dark-grey-rgba);
     box-shadow: 0 2px 2px #222;
-    /* Layer stacking! */
     z-index: 9999;
-    color: #fff;
+    color: var(--light-grey-rgba);
     transition: background-color 0.3s ease;
 }
 
@@ -380,11 +390,11 @@ nav ion-icon {
     left: 0;
     width: 100%;
     background-image: none;
-    background-color: rgba(238, 238, 238, 0.95);   
-    box-shadow: 0 2px 2px #efefef;
+    background-color: var(--light-grey-rgba);  
+    box-shadow: 0 2px 2px #ccc;
     /* Layer stacking! */
     z-index: 9999;
-    color: #444;
+    color: var(--dark-grey-rgba);
     transition: background-color 0.3s ease;
 }
 
@@ -440,11 +450,6 @@ nav ion-icon {
 .sticky-white .main-nav li a:active {
     border-bottom: 2px solid var(--belize-hole-blue);
 }
-
-/* .sticky-black .mobile-nav-icon,
-.sticky-white .mobile-nav-icon {
-    margin-top: 0;
-} */
 
 
 /* ----------------------------------------------- */
@@ -609,8 +614,8 @@ section h1 {
 }
 
 .section-main {
-    background-color: #eee;
-    color: #333;
+    background-color: var(--dark-grey-hex);
+    color: var(--light-grey-hex);
     height: 100%;
     min-height: 540px;
     text-align: left;
@@ -619,7 +624,7 @@ section h1 {
 .section-main h1,
 .section-other h1 {
     margin-top: 5px;
-    color: #333;
+    color: var(--light-grey-hex);
 }
 
 .section-main h1:after,
@@ -690,38 +695,33 @@ section h1 {
 }
 
 .white-and-black {
-    color: #333;
+    background-image: var(--light-greydinet);
+    color: var(--dark-grey-hex);
+    text-align: left;
+}
+
+.black-and-white {
+    background-image: var(--dark-greydient);
+    color: var(--light-grey-hex);
     text-align: left;
 }
 
 .section-project-gr {
-    /* background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/gifferreborngif.png);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/gifferreborngif.png); */
-    background-color: #111;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: #fff;
 }
 
 .section-project-dmb {
-    /* background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(./img/dmbproto.png);
-    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(./img/dmbproto.png); */
-    background-color: #eee;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: #333;
 }
 
 .section-project-ph {
-    /* background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/pihabitsleds.png);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/pihabitsleds.png); */
-    background-color: #111;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: #fff;
 }
 
 .project-feature-header {
@@ -905,8 +905,6 @@ section h1 {
 /* ----------------------------------------------- */
 
 .section-other {
-    background-color: #eee;
-    color: #333;
     height: 100%;
     text-align: center;
 }
@@ -1044,20 +1042,16 @@ input[type=submit] {
 /* ----------------------------------------------- */
 
 .section-contact {
-    /* background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/pihabitsleds.png);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/pihabitsleds.png); */
-    background-color: #111;
     background-size: cover;
     background-position: center;
     height: 100%;
     min-height: 450px;
     background-attachment: fixed;
-    color: #fff;
     text-align: left;
 }
 
 .section-contact h1 {
-    color: #fff;
+    color: var(--dark-grey-hex);
 }
 
 .section-contact ul {
@@ -1133,8 +1127,8 @@ input[type=submit] {
 /* ----------------------------------------------- */
 
 footer {
-    background-color: #eee;
-    color: #333;
+    background-image: var(--dark-greydient);
+    color: var(--light-grey-hex);
 }
 
 footer p {

@@ -15,7 +15,7 @@ $(document).ready(function() {
       // $navEl.removeClass('fadeOutUp')
       //       .addClass('fadeInDown animated sticky-black')
     } else { 
-      $navEl.removeClass('fadeOutUp animated sticky-black')
+      $navEl.removeClass('fadeOutUp animated sticky-white')
             // .addClass('fadeOutUp animated sticky-black')
     } 
   }, {
@@ -28,10 +28,10 @@ $(document).ready(function() {
   $('.js--section-main').waypoint(function(direction)  {
     if (direction == 'down') {
       $navEl.removeClass('fadeOutUp')
-            .addClass('fadeInDown animated sticky-black')
+            .addClass('fadeInDown animated sticky-white')
     } else { 
       $navEl.removeClass('fadeInDown')
-            .addClass('fadeOutUp animated sticky-black')
+            .addClass('fadeOutUp animated sticky-white')
     } 
   }, {
       offset: stickyOffset
@@ -39,11 +39,11 @@ $(document).ready(function() {
 
   $('.js--section-project-gr').waypoint(function(direction) {
     if (direction == 'down') {
-          $navEl.removeClass('sticky-black')
-                .addClass('sticky-white');
-    } else {
           $navEl.removeClass('sticky-white')
                 .addClass('sticky-black');
+    } else {
+          $navEl.removeClass('sticky-black')
+                .addClass('sticky-white');
     }
   }, {
       offset: stickyOffset
@@ -51,11 +51,11 @@ $(document).ready(function() {
 
   $('.js--section-project-dmb').waypoint(function(direction) {
     if (direction == 'down') {
-        $navEl.removeClass('sticky-white')
-              .addClass('sticky-black');
-    } else {
         $navEl.removeClass('sticky-black')
               .addClass('sticky-white');
+    } else {
+        $navEl.removeClass('sticky-white')
+              .addClass('sticky-black');
     }
   }, {
       offset: stickyOffset
@@ -63,11 +63,11 @@ $(document).ready(function() {
 
   $('.js--section-project-ph').waypoint(function(direction) {
     if (direction == 'down') {
-        $navEl.removeClass('sticky-black')
-              .addClass('sticky-white');
-  } else {
-        $navEl.removeClass('sticky-white')
-              .addClass('sticky-black');
+      $navEl.removeClass('sticky-white')
+            .addClass('sticky-black');
+    } else {
+          $navEl.removeClass('sticky-black')
+                .addClass('sticky-white');
     }
   }, {
       offset: stickyOffset
@@ -75,11 +75,11 @@ $(document).ready(function() {
 
   $('.js--section-project-other').waypoint(function(direction) {
     if (direction == 'down') {
+      $navEl.removeClass('sticky-black')
+            .addClass('sticky-white');
+    } else {
         $navEl.removeClass('sticky-white')
               .addClass('sticky-black');
-    } else {
-        $navEl.removeClass('sticky-black')
-              .addClass('sticky-white');
     }
   }, {
       offset: stickyOffset
@@ -87,11 +87,11 @@ $(document).ready(function() {
 
   $('.js--section-contact').waypoint(function(direction) {
     if (direction == 'down') {
-        $navEl.removeClass('sticky-black')
-              .addClass('sticky-white');
-  } else {
-        $navEl.removeClass('sticky-white')
-              .addClass('sticky-black');
+      $navEl.removeClass('sticky-white')
+            .addClass('sticky-black');
+    } else {
+          $navEl.removeClass('sticky-black')
+                .addClass('sticky-white');
     }
   }, {
       offset: stickyOffset
