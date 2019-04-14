@@ -54,13 +54,28 @@
     }
 
     .btn {
-
         margin-top: 15px;
         margin-bottom: 15px;
         letter-spacing: 2px;
         font-weight: 700;
         text-transform: uppercase;
         font-size: 120%;
+    }
+
+    .section-other .btn {
+        margin-top: 20px;
+        margin-bottom: 15px;
+        letter-spacing: 2px;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 100%;
+    }
+
+    .other-project-list {
+        min-height: auto;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        padding: 5px, 10px;
     }
 
     .hero-column {
@@ -97,6 +112,7 @@
 
     .project-box {
         height: auto;
+        text-align: left;
     }
 
     .project-buttons {
@@ -129,17 +145,28 @@
         margin-right: auto;
     }
 
-    .project-feature {
+    .project-feature,
+    .other-project-list {
         width: fit-content;
         margin-left: 5%;
         margin-right: auto;        
     }
 
-    .other-project-list {
+    .section-other {
+        font-size: 130%;
+    }
+
+    .section-other h4 {
+        font-size: 95%;
+        text-align: left;
+        font-weight: 700;
+    }
+
+    /* .other-project-list {
         width: fit-content;
         margin-left: auto;
         margin-right: auto;      
-    }
+    } */
 
     section img {
         width: 100%;
@@ -163,8 +190,20 @@
         margin: 0 0 4% 0;
     }
 
+    .hero-text-box {
+        text-align: center;
+        position: absolute;
+        /* top: 384px; */
+        top:50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
     .hero-row {
-        height: 30%;
+        height: 80vh;
+        width: 100%;
+        display: inline-block;
+        position: relative;
     }
     
     .main-nav { display: none; }
@@ -201,8 +240,8 @@
 
     .sticky .main-nav li a:link,
     .sticky .main-nav li a:visited { padding: 10px 0; }   
-    .sticky-white .mobile-nav-icon { margin-top: 16px; }
-    .sticky-black .mobile-nav-icon { margin-top: 16px; }
+    .sticky-white .mobile-nav-icon { margin-top: 5px; }
+    .sticky-black .mobile-nav-icon { margin-top: 5px; }
     .sticky .mobile-nav-icon i { color: #555; }
     
     .app-screen { width: 40%; }

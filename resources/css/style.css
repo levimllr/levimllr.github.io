@@ -254,9 +254,9 @@ header {
 }
 
 .hero-text-box {
-    padding-left: 20%;
+    padding-left: 10%;
     padding-right: 20%; 
-    text-align: center;
+    text-align: left;
     position: absolute;
     top: 50%;
     -ms-transform: translateY(-50%);
@@ -393,7 +393,7 @@ nav ion-icon {
     padding-right: 0px;
 }
 
-.sticky-white .ion-md-menu {
+.sticky-white ion-icon {
     color: #333;
 }
 
@@ -439,6 +439,11 @@ nav ion-icon {
 .sticky-white .main-nav li a:active {
     border-bottom: 2px solid var(--belize-hole-blue);
 }
+
+/* .sticky-black .mobile-nav-icon,
+.sticky-white .mobile-nav-icon {
+    margin-top: 0;
+} */
 
 
 /* ----------------------------------------------- */
@@ -592,8 +597,8 @@ section p {
 section img {
     padding-top: 10px;
     padding-bottom: 2px;
-    padding-left: 10px;
-    padding-right: 10px;
+    /* padding-left: 10px;
+    padding-right: 10px; */
     width: 67%;
     height: auto;
 }
@@ -909,7 +914,7 @@ section h1 {
 }
 
 .section-other .btn {
-    margin-top: 10px;
+    margin-top: -50px;
     margin-bottom: 5px;
     letter-spacing: 2px;
     font-weight: 700;
@@ -956,6 +961,10 @@ input[type=submit] {
 .section-other ul {
     list-style: none;
     padding: 2px;
+}
+
+.other-project-list {
+    min-height: 220px;
 }
 
 .other-project-list ul li {

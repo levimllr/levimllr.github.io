@@ -6,7 +6,7 @@ $(document).ready(function() {
 
   const $navEl = $('nav');
 
-  var stickyOffset = '66px;';
+  var stickyOffset = '68px;';
 
   /** When scrolling to the top of the page, remove animation
    * and style classes from the sticky header. */
@@ -236,24 +236,10 @@ $(document).ready(function() {
   // });
   
   /* Mobile nav */
-//   $('.js--nav-icon').click(function() {
-//     var nav = $('.main-nav');
-//     var icon = $('.js--nav-icon i');  
-    
-//     nav.slideToggle(200);
-//     if (icon.hasClass('ion-md-menu')) {
-//         icon.addClass('ion-md-close');
-//         icon.removeClass('ion-md-menu');
-//     } else {
-//         icon.addClass('ion-md-menu');
-//         icon.removeClass('ion-md-close');
-//     }
-// });
 
   $('.js--nav-icon').click(function() { 
       var nav = $('.main-nav');
       var icon = $('#mobile-nav-icon-image');
-      console.log(icon.attr("name"));
       
       nav.slideToggle(200);
       if (icon.attr("name") == "menu") {
@@ -262,24 +248,37 @@ $(document).ready(function() {
           icon.attr("name","menu");
       }
   });
-  
-  // $('.js--main-nav a').click(function(){
-  //     var nav = $('.js--main-nav');
-  //     var icon = $('.js--nav-icon i');
-      
-  //     if ($(window).width() < 768){
-  //         nav.slideToggle(200);
 
-  //     }
-      
-  //     if (icon.hasClass('ion-md-menu')) {
-  //         icon.addClass('ion-md-close');
-  //         icon.removeClass('ion-md-menu');
-  //     } else {
-  //         icon.addClass('ion-md-menu');
-  //         icon.removeClass('ion-md-close');
-  //     }
-  // });
+  $('.js--main-nav').click(function () {
+    var nav = $('.js--main-nav');
+    var icon = $('#mobile-nav-icon-image');
+    nav.slideToggle(200);
+    if (icon.attr("name") == "menu") {
+      icon.attr("name","close");
+    } else {
+        icon.attr("name","menu");
+    }
+  })
+
+  // $('.logo').click(function () {
+  //   var nav = $('.js--main-nav');
+  //   var icon = $('#mobile-nav-icon-image');
+  //   nav.slideToggle(200);
+  //   if (icon.attr("name") == "menu") {
+  //     icon.attr("name","close");
+  //   } else {
+  //       icon.attr("name","menu");
+  //   }
+  // })
+
+  $('.logo').click(function () {
+    var nav = $('.js--main-nav');
+    var icon = $('#mobile-nav-icon-image');
+
+    if (icon.attr("name") == "close") {
+      icon.attr("name","menu");
+      nav.slideToggle(200); }
+  })
   
   $(window).resize(function(){
       var nav = $('.js--main-nav');
