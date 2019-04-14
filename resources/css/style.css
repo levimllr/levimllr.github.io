@@ -8,13 +8,14 @@
 
 :root {
     --belize-hole-blue: #3498db;
-    --bleu-de-france: #2e86de;
+    --complementary-orange: #db6f34;
+    --bleu-de-france: #31ace0;
     --light-grey-hex: #ddd;
     --light-grey-rgba: rgba(221, 221, 221, 0.95);
-    --light-greydient: linear-gradient(-90deg, #E0EAFC, #CFDEF3);
+    --light-greydient: linear-gradient(-45deg, #e09431, #fff);
     --dark-grey-hex: #222;
     --dark-grey-rgba: rgba(34, 34, 34, 0.95);
-    --dark-greydient: linear-gradient(90deg, #111, #444);
+    --dark-greydient: linear-gradient(-45deg, #111, #444);
   }
 
 /* ----------------------------------------------- */
@@ -64,7 +65,7 @@ h1,
 h2 {
     font-weight: 700;
     text-transform: none;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto Mono', serif;
 }
 
 h4 {
@@ -167,6 +168,7 @@ a:focus {
     font-weight: 700;
     text-transform: uppercase;
     font-size: 90%;
+    font-family: 'Roboto', serif;
 }
 
 .btn:link,
@@ -202,13 +204,13 @@ input[type=submit] {
 input[type=submit]:hover,
 input[type=submit]:active,
 input[type=submit]:focus {
-    background-color: var(--bleu-de-france);
+    background-color: #db6f34;
 }
 
 .btn-full:hover,
 .btn-full:active,
 .btn-full:focus {
-    border: 1px solid var(--bleu-de-france);
+    border: 1px solid #db6f34;
 }
 
 .btn-ghost:hover,
@@ -234,7 +236,8 @@ input[type=submit]:focus {
 /* ----------------------------------------------- */
 
 header {
-    background-image: var(--light-greydient);
+    background-color: #eee;
+    background-blend-mode: screen;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -265,6 +268,18 @@ header {
     transform: translateY(-50%);
 }
 
+.blinking{
+    font-size: 130%;
+    font-weight: 200;
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: var(--complementary-orange);    }
+    40%{    color: transparent; }
+    50%{    color: transparent; }
+    60%{    color:transparent;  }
+    100%{   color:var(--complementary-orange);;    }
+}
 
 nav li {
     letter-spacing: 2px;
@@ -328,7 +343,7 @@ nav li {
 .main-nav li a:hover,
 .main-nav li a:active,
 .main-nav li a:focus {
-    border-bottom: 2px solid var(--belize-hole-blue);
+    border-bottom: 2px solid var(--complementary-orange);
 }
 
 /* Mobile navi */
@@ -631,7 +646,7 @@ section h1 {
 .section-contact h1:after {
     display: block;
     height: 2px;
-    background-color: var(--bleu-de-france);
+    background-color: var(--complementary-orange);
     content: " ";
     width: 100%;
     margin: 0 auto;
@@ -694,7 +709,7 @@ section h1 {
 }
 
 .white-and-black {
-    background-image: var(--light-greydinet);
+    background-color: #eee;
     color: var(--dark-grey-hex);
     text-align: left;
 }
@@ -905,7 +920,6 @@ section h1 {
 
 .section-other {
     height: 100%;
-    text-align: center;
 }
 
 .section-other .project-box {
@@ -1073,7 +1087,7 @@ input[type=submit] {
 
 .contact-links {
     white-space: nowrap;
-    margin-top: 24px;
+    margin-top: 50px;
 }
 
 .contact-links p {
@@ -1083,6 +1097,7 @@ input[type=submit] {
 
 .contact-links ion-icon {
     font-size: 175%;
+    color: var(--belize-hole-blue);
 }
 
 .section-contact img {
@@ -1095,7 +1110,7 @@ input[type=submit] {
 
 .section-contact a:link,
 .section-contact a:visited {
-    color: var(--bleu-de-france);
+    color: var(--dark-grey-hex);
     text-decoration: none;
     padding-bottom: 7px;
     border-bottom: 2px solid transparent;
@@ -1117,7 +1132,7 @@ input[type=submit] {
 
 .section-contact p {
     display: inline;
-    font-size: 135%;
+    font-size: 120%;
 }
 
 
@@ -1135,6 +1150,10 @@ footer p {
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 90%;
+}
+
+footer i {
+    color: var(--complementary-orange);
 }
 
 .copyright {
