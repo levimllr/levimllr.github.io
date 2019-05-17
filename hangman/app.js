@@ -85,7 +85,7 @@ function newWord() {
 
     let word = pickRandomWord(dictArray)
     wordArray = word.split('');
-    wordArray.pop();
+    // wordArray.pop(); LOCALLY, THIS LINE IS NEEDED?
     wordScreen = createWordBlank(wordArray);
     guessArray = [];
     missArray = [];
