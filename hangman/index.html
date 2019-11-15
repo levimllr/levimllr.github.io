@@ -8,9 +8,13 @@
     </head>
     <body>
         <div class="header flex-container">
-            <div class="row lastWords">
-                <h2 id="titleStatus">Last Words</h2>
-                <ul id="wordScore"></ul>
+            <div>
+                <h1 id="titleStatus">Last Words</h1> 
+                <div class="row" id="gameInfo">
+                    <h3 id="roundHeader">Round 1</h3>
+                    <ul id="wordScore-1"></ul>
+                </div>
+                <h2 id="totalScore">Total Score: 0</h2>
             </div>
             <div class="scaffold" id="scaffold">
                 <img id="scaffoldImg" src="./resources/img/Hangman-0.png">
@@ -27,7 +31,7 @@
                     <p class="field" id="wordField"></p>
                 </div>
                 <div class="preField" id="guesses">
-                    <p>Guesses</p>
+                    <p>Hits</p>
                     <p class="field" id="guessChars"></p>
                 </div>
                 <div class="preField" id="misses">
@@ -37,9 +41,26 @@
             </div>
         </div>
         <div class="buttons">
-            <button id="newWord">New Word</button>
+            <button id="newGameButton">New Game</button>
+            <button id="highScoreButton">High Scores</button>
+        </div>
+
+        <div class="modal" id="gameModal">
+            <div class="modal-content">
+                <h1 class="modal-header" id="gameModalHeader">Any last words, _ _ _ ?</h1>
+                <h3>Press any letter on your keyboard.</h3>
+            </div>
         </div>
         
+        <div class="modal" id="scoreModal">
+            <div class="modal-content score-modal-content">
+                <span class="close-button">&times;</span>
+                <h1 class="modal-header">High Scores</h1>
+                <h3 class="modal-header">RANK-SCORE-NAME</h3>
+                <ul class="modal-list" id="scoreList">
+                </ul>
+            </div>
+        </div>
     </body>
 
     <script src="app.js"></script>
