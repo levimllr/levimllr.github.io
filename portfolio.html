@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/resources/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="/resources/favicons/favicon.ico">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/Grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+        <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+         
+        <title>Levi Miller</title>
+        
+    </head>
+    <body>
+        <header id="header">
+            <nav>
+                <div class="row">
+                    <h3 class="logo js--scroll-to-top">Levi Miller</h3>
+                    <a class="mobile-nav-icon js--nav-icon"><ion-icon id="mobile-nav-icon-image" name="menu"></ion-icon></a>
+                    <ul class="main-nav js--main-nav">
+                        <li><a href="#" class="js--scroll-to-main">Recent Projects</a></li>
+                        <li><a href="#" class="js--scroll-to-other">Past Projects</a></li>
+                        <li><a href="#" class="js--scroll-to-contact">Contact</a></li>      
+                    </ul>
+                </div>
+            </nav>
+            <div class="row hero-row">
+                    <div class="hero-text-box">
+                        <h1>Hi, I'm Levi!<span class="blinking">_</span></h1>
+                        <h3>
+                            I'm a software engineer with a background in engineering education and material science.
+                            I work with teams to build responsive projects in technology that bring people together.
+                        </h3>
+                        <a class="btn btn-full js--scroll-to-main" href="#">Projects</a>
+                        <a class="btn btn-ghost js--scroll-to-contact" href="#">Contact</a>
+                </div>
+            </div>
+        </header>
+
+        <section class="section-main js--section-main" id="main" role="main">
+            <div class="row">            
+                <h1>Recent Projects</h1>
+            </div>
+            <div class="row menu-row">
+                <div class="col span-1-of-3 box menu-col">
+                    <div class="project-box menu-box">
+                        <img class="menu-img" src="resources/img/gifferrebornconfig.png" alt="Arduino Visualizer">
+                        <h4>Arduino Visualizer</h4>
+                        <h5>A virtual Arduino coding platform</h5>
+                        <p class="menu-p">"Generate Exercise" is a feature that allows the instructor to make an exercise in 1 click given 3 source files.</p>
+                    </div>
+                    <div>
+                        <a class="btn btn-full btn-menu js--scroll-to-gr" href="#">Details</a>
+                    </div>
+                </div>
+                <div class="col span-1-of-3 box">
+                        <div class="project-box">
+                            <img class="menu-img" src="resources/img/dmbprotoangle.jpg" alt="Digital Music Box">
+                            <h4>Digital Music Box</h4>
+                            <h5>A mechatronic song composer</h5>
+                            <p class="menu-p">The prototype has 3 tracks available for composition on the drum with metal pegs, which trigger sounds from the MIDI module.</p>
+                        </div>
+                        <div>
+                            <a class="btn btn-full menu-btn js--scroll-to-dmb" href="#">Details</a>
+                        </div>
+                </div>
+                <div class="col span-1-of-3 box">
+                    <div class="project-box">
+                        <img class="menu-img" src="resources/img/phboth.jpg" alt="Arduino Visualizer">
+                        <h4>Raspberry Pi Habits</h4>
+                        <h5>An IoT habit tracker</h5>
+                        <p class="menu-p">The landing page shows a habit heatmap (ala GitHub) which is synced with a grid of LEDs to give a stimulating log of activity.</p>
+                    </div>
+                    <div>
+                        <a class="btn btn-full btn-menu js--scroll-to-ph" href="#">Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+            <!-- The Modal -->
+            <div id="grConfigImg-modal" class="modal">
+
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="grConfigImg-modalImg">
+
+                <!-- Modal Caption (Image Text) -->
+                <div class="modal-caption" id="grConfigImg-caption"></div>
+            </div>
+            <div id="grExerciseImg-modal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="grExerciseImg-modalImg">
+                <div class="modal-caption" id="grExerciseImg-caption">Caption</div>
+            </div>
+            <div id="dmbProtoImg-modal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="dmbProtoImg-modalImg">
+                <div class="modal-caption" id="dmbProtoImg-caption"></div>
+            </div>
+            <div id="dmbModelImg-modal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="dmbModelImg-modalImg">
+                <div class="modal-caption" id="dmbModelImg-caption"></div>
+            </div>
+            <div id="phupdateImg-modal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="phupdateImg-modalImg">
+                <div class="modal-caption" id="phupdateImg-caption"></div>
+            </div>
+            <div id="phbothImg-modal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="phbothImg-modalImg">
+                <div class="modal-caption" id="phbothImg-caption"></div>
+            </div>
+
+        <section class="section-project-gr js--section-project-gr white-and-black">
+            <div class="row">
+                <article class="col span-1-of-2 box project-column">
+                    <div class="project-center-box">
+                        <div class="project-feature-header">
+                            <h1>Arduino Visualizer</h1>
+                            <h3>A virtual Arduino coding platform</h3>
+                        </div>
+                        <div class="project-feature">
+                            <h4>Software:</h4>
+                            <ul>
+                                <li><ion-icon name="logo-javascript"></ion-icon>JS + Ace Editor, JSCPP</li>
+                                <li><ion-icon name="logo-css3"></ion-icon>CSS3 + Bootstrap</li>
+                                <li><ion-icon name="outlet"></ion-icon>Arduino Uno, Mega</li>
+                                <li><ion-icon name="logo-octocat"></ion-icon>GitHub Pages</li>
+                                <li><ion-icon name="logo-html5"></ion-icon>HTML5</li>
+                            </ul>
+                        </div>
+                        <div class="project-feature">
+                                <h4>Features:</h4>
+                            <ul>
+                                <li><ion-icon name="checkmark"></ion-icon>400+ use to learn hardware programming</li>
+                                <li><ion-icon name="checkmark"></ion-icon>Simulates light/motor output and sensor input</li>
+                                <li><ion-icon name="checkmark"></ion-icon>.gif renders from Javascript-intepreted C++</li>
+                                <li><ion-icon name="checkmark"></ion-icon>Generates exercises in 1 click with source code</li>
+                            </ul>
+                        </div>
+                        <div class="project-buttons">
+                            <a class="btn btn-full js--scroll-to-main" href="https://dpengineering.github.io/giffer-reborn/index.html" target="_blank"><ion-icon name="link"></ion-icon>Site</a>
+                            <a class="btn btn-ghost js--scroll-to-contact" href="https://github.com/dpengineering/giffer-reborn" target="_blank"><ion-icon name="code"></ion-icon>Source</a>
+                        </div>
+                    </div>
+                </article>
+                <div class="col span-1-of-2 box fill-row project-column">
+                    <div class="project-center-box">
+                        <!-- Trigger the Modal -->
+                        <img id="grConfigImg" src="resources/img/gifferreborngif.png" alt="Arduino Visualizer output. The site takes C++ code input into the Ace Editor, interprets it into JavaScript, and creates a .gif simulating hardware interfaced with an Arduino.">
+                        <p>Arduino Visualizer output. The site takes C++ code input into the Ace Editor, interprets it into JavaScript, and creates a .gif simulating Arduino hardware.</p>
+
+
+                        <img id="grExerciseImg" src="resources/img/gifferrebornexercise.png" alt="Arduino Visualizer Exercise Generator. This feature allows the instructor to make an exercise in one click given three source files." onClick="triggerModal(this.id)">
+                        <p>Arduino Visualizer Exercise Generator. This feature allows the instructor to make an exercise in one click given three source files.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-project-dmb js--section-project-dmb black-and-white">
+            <div class="row">
+                <article class="col span-1-of-2 box project-column">
+                    <div class="project-center-box">
+                        <div class="project-feature-header">
+                            <h1>Digital Music Box</h1>
+                            <h3>A mechatronic song composer</h3>
+                        </div>
+                        <div class="project-feature">
+                            <h4>Software and hardware:</h4>
+                            <ul>
+                                <li><ion-icon name="logo-python"></ion-icon>Python + Kivy</li>
+                                <li><ion-icon name="outlet"></ion-icon>Raspberry Pi + Arduino Mega</li>
+                                <li><ion-icon name="cog"></ion-icon>100+ fabricated and stock parts</li>
+                                <li><ion-icon name="flash"></ion-icon>ODrive and capacitave sensors</li>
+                                <li><ion-icon name="volume-high"></ion-icon>MIDI protocol</li>
+                            </ul>
+                        </div>
+                        <div class="project-feature">
+                            <h4>Features:</h4>
+                            <ul>
+                                <li><ion-icon name="checkmark"></ion-icon>Allows for different notes, instruments, tempos</li>
+                                <li><ion-icon name="checkmark"></ion-icon>Capacitavely senses movable metal pins</li>
+                                <li><ion-icon name="checkmark"></ion-icon>Mixes tracks with sound module</li>
+                                <li><ion-icon name="checkmark"></ion-icon>Manages data with Arduino + Raspberry Pi</li>
+                                <li><ion-icon name="checkmark"></ion-icon>WIP: Touch-screen interface</li>
+                            </ul>
+                        </div>
+                        <div class="project-buttons">
+                            <a class="btn btn-full js--scroll-to-contact" href="https://github.com/dpengineering/DigitalMusicBox" target="_blank"><ion-icon name="code"></ion-icon>Source</a>
+                        </div>
+                    </div>
+                </article>
+                <div class="col span-1-of-2 box project-column">
+                    <div class="project-center-box">
+                        <img id="dmbProtoImg" src="resources/img/dmbproto.png" alt="Digital Music Box prototype. The prototype has 3 tracks available for composition on the drum with metal pegs, which trigger sounds from the MIDI module.">
+                        <p>Digital Music Box prototype. The prototype has 3 tracks available for composition with metal pegs on the drum, which trigger the MIDI module.</p>
+                        
+
+                        <img id="dmbModelImg" src="resources/img/dmbmodel.png" alt="Digital Music Box full model. The final product will have a removable drum with 12 programmable tracks and a touch-screen GUI.">
+                        <p>Digital Music Box full model. The final product will have a removable drum with 12 programmable tracks and a touch-screen GUI.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-project-ph js--section-project-ph white-and-black">
+            <div class="row">
+                <article class="col span-1-of-2 box project-column">
+                    <div class="project-center-box">
+                        <div class="project-feature-header">
+                            <h1>Pi Habits</h1>
+                            <h3>An IoT habit tracker</h3>
+                        </div>
+                        <div class="project-feature">
+                            <h4>Software and hardware:</h4>
+                            <ul>
+                                <li><ion-icon name="logo-python"></ion-icon>Python + Flask</li>
+                                <li><ion-icon name="logo-javascript"></ion-icon>JS + jQuery</li>
+                                <li><ion-icon name="outlet"></ion-icon>Raspbery Pi + Unicorn HAT</li>
+                                <li><ion-icon name="logo-css3"></ion-icon>CSS3 + Bootstrap</li>
+                                <li><ion-icon name="logo-html5"></ion-icon>HTML5</li>
+                            </ul>
+                        </div>
+                        <div class="project-feature">
+                            <h4>Features:</h4>
+                            <ul>
+                                <li><ion-icon name="checkmark"></ion-icon>Online heatmap syncs with LED grid</li>
+                                <li><ion-icon name="checkmark"></ion-icon>SQL database tracks users, habits, history</li>
+                                <li><ion-icon name="checkmark"></ion-icon>Activity frequency reflects in color, brightness</li>
+                                <li><ion-icon name="checkmark"></ion-icon>Raspberry Pi hosts site server</li>
+                                <li><ion-icon name="checkmark"></ion-icon>Tracks and indicates streaks</li>
+                            </ul>
+                        </div>
+                        <div class="project-buttons">
+                            <a class="btn btn-full js--scroll-to-main" href="https://www.youtube.com/watch?v=RwNhhZVvWiA" target="_blank"><ion-icon name="play"></ion-icon>Video</a>
+                            <a class="btn btn-ghost js--scroll-to-contact" href="https://github.com/levimllr/pi-habits" target="_blank"><ion-icon name="code"></ion-icon>Source</a>
+                        </div>
+                    </div>
+                </article>
+                <div class="col span-1-of-2 box project-column">
+                    <div class="project-center-box">    
+                        <img id="phupdateImg" src="resources/img/phupdate.png" alt="The PiHabits IoT habit tracker is fully responsive and gives users a platform to log their habit activity from any device.">
+                        <p>The PiHabits IoT habit tracker is fully responsive and gives users a platform to log their habit activity from any device.</p>
+                        
+
+                        <img id="phbothImg" src="resources/img/phboth.jpg" alt="PiHabits displays a unique activity heatmap for each user on its site and on an LED grid. The intensity and color of the LEDs indicates activity frequency and streaks. ">
+                        <p>PiHabits displays a unique activity heatmap for each user on its site and on an LED grid. The intensity and color of the LEDs indicates activity frequency.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-other js--section-project-other black-and-white" id="other">
+            <div class="row">            
+                <h1>Past Projects</h1>
+            </div>
+            <article class="row">
+                <div class="col span-1-of-3 box">
+                    <div class="project-box">
+                        <img src="resources/img/osksnap.png" alt="Organic Soup Kitchen Screenshot" class="menu-img">
+                        <h3>Organic Soup Kitchen</h3>
+                        <h5>A non-profit organization hub</h5>
+                        <div class="other-project-list">
+                            <h4>Software:</h4>
+                            <ul>
+                                <li><ion-icon name="leaf"></ion-icon>Wix</li>
+                                <li><ion-icon name="filing"></ion-icon>MailChimp, DonorBox, Stripe</li>
+                                <li><ion-icon name="cloud"></ion-icon>Salesforce</li>
+                                <li><ion-icon name="albums"></ion-icon>Tableau, Zapier</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-box">
+                        <div class="other-project-list">
+                            <h4>Features:</h4>
+                            <ul>
+                                <li><ion-icon name="checkmark"></ion-icon>Integrates MailChimp,  DonorBox</li>
+                                <li><ion-icon name="checkmark"></ion-icon>Syncs with Salesforce</li>
+                                <li><ion-icon name="checkmark"></ion-icon>Easy to maintain and use</ion-icon></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-buttons">
+                        <a class="btn btn-full js--scroll-to-main" href="https://www.organicsoupkitchen.org/" target="_blank"><ion-icon name="link"></ion-icon>Site</a>
+                    </div>
+                </div>
+                <div class="col span-1-of-3 box">
+                    <div class="project-box">
+                        <img src="resources/img/bernoulliblower.png" alt="Bernoulli Blower Game">
+                        <h3>Bernoulli Challenge</h3></a>
+                        <h5>An exhibit of fluid dynamics</h5>
+                        <div class="other-project-list">
+                            <h4>Software/hardware:</h4>
+                            <ul>
+                                <li><ion-icon name="logo-python"></ion-icon>Python & C++</li>
+                                <li><ion-icon name="outlet"></ion-icon>Arduino Mega & Raspbery Pi</li>
+                                <li><ion-icon name="cog"></ion-icon>100+ machined and stock parts</li>
+                                <li><ion-icon name="flash"></ion-icon>ODrive motor, high-wattage fan</li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-box">
+                        <div class="other-project-list">
+                            <h4>Features:</h4>
+                            <ul>
+                                <li><ion-icon name="checkmark"></ion-icon>Blower controlled by joystick</li>
+                                <li><ion-icon name="checkmark"></ion-icon>Modular obstacle course</li>
+                                <li><ion-icon name="checkmark"></ion-icon>Astroturf + border control ball</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-buttons">
+                        <a class="btn btn-full js--scroll-to-main" href="https://www.kclu.org/post/new-exhibits-south-coast-museum-created-high-school-engineering-students#stream/0" target="_blank"><ion-icon name="paper"></ion-icon>News</a>
+                        <a class="btn btn-ghost js--scroll-to-contact" href="https://github.com/dpengineering/Bernoulli" target="_blank"><ion-icon name="code"></ion-icon>Source</a>
+                    </div>
+                </div>
+                <div class="col span-1-of-3 box">
+                    <div class="project-box">
+                        <img src="resources/img/pigsnap.png" alt="Pig Dice Game">
+                        <h3>Jeopardy Dice Game</h3>
+                        <h5>A competitive game of chance</h5>
+                        <div class="other-project-list">
+                            <h4>Software:</h4>
+                            <ul>
+                                <li><ion-icon name="logo-javascript"></ion-icon>Vanilla JavaScript </li>
+                                <li><ion-icon name="logo-css3"></ion-icon>CSS3</li>
+                                <li><ion-icon name="logo-html5"></ion-icon>HTML5</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-box">
+                        <div class="other-project-list">
+                            <h4>Features:</h4>
+                            <ul>
+                                <li><ion-icon name="checkmark"></ion-icon>Infinitely replayable</li>
+                                <li><ion-icon name="checkmark"></ion-icon>Multiplayer</li>
+                                <li><ion-icon name="checkmark"></ion-icon>Modern, responsive design</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-buttons">
+                        <a class="btn btn-full js--scroll-to-main" href="/jeopardice/index.html" target="_blank"><ion-icon name="link"></ion-icon>Site</a>
+                        <a class="btn btn-ghost js--scroll-to-contact" href="https://github.com/levimllr/jeopardice-js-app" target="_blank"><ion-icon name="code"></ion-icon>Source</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="section-contact js--section-contact white-and-black" id="contact">
+            <div class="row">
+                <h1>Contact</h1>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3 box">          
+                    <img src="resources/img/levi.jpg" alt="Levi Miller">
+                </div>
+                <div class="col span-1-of-3 box">
+                    <ul class="contact-links">
+                        <li><a href="https://en.wikipedia.org/wiki/San_Francisco_Bay_Area" target="_blank"><ion-icon name="pin"></ion-icon><p>SF Bay Area</p></a></li>
+                        <li><a href="mailto:hi@levimiller.me" target="_blank"><ion-icon name="mail"></ion-icon><p>hi@levimiller.me</p></a></li>
+
+                    </ul>
+                </div>
+                <div class="col span-1-of-3 box">
+                    <ul class="contact-links">
+                        <li><a href="https://github.com/levimllr" target="_blank"><ion-icon  class="github" name="logo-github"></ion-icon><p>GitHub</p></a></li>
+                        <li><a href="https://www.linkedin.com/in/levi" target="_blank"><ion-icon class="linkedin" name="logo-linkedin"></ion-icon><p>LinkedIn</p></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+        
+        <footer>
+            <p>&copy; 2019. Handmade with <i class="icon ion-md-heart"></i> and JavaScript.</p>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <script src="resources/js/script.js"></script>
+
+    </body>
+</html>
